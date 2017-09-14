@@ -1,0 +1,263 @@
+/*Paramètre général*/
+
+/*Bandeau titre*/
+
+.container-fluid {
+    padding: 0;
+}
+
+/*Bandeau Image */
+
+.bandeau_titre {
+    background-image: url("../img/bar.png");
+    background-size: cover;
+    background-position-y:-10em;
+    background-repeat: no-repeat;
+    width: 100%;
+    z-index: -1;
+    height: 100vh;
+    padding-top: 5em;
+    position: fixed;
+}
+
+.bandeau_titre-sm {
+    background-image: url("../img/bar.png");
+    background-position-y:-10em;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 10vh;
+    padding-top: 5vh;
+    z-index: -1;
+    height: 100vh;
+    position: fixed;
+}
+
+
+
+/*Panneau + Titre taille md et lg*/
+
+.panneau-titre {
+    background-color: #adadad;
+    border: 5px solid;
+    border-style:double;
+    height: 50vh;
+    width: 23vw;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 0.9;
+    background-size: cover;
+}
+
+/*Panneau + Titre taille xs et sm*/
+
+.panneau-titre-sm {
+    background-color: #adadad;
+    border: 5px solid;
+    border-style:double;
+    height: 70vh;
+    width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 0.9;
+    position: relative;
+}
+
+/*Custom navbar*/
+
+.navbar {
+    min-height: 10vh;
+    padding-top: 2vh;
+    font-size: 2vh;
+}
+
+/*Espace vide afin d'afficher la nav bar en dessous de l'image*/
+
+.escpace-vide {
+    width: 50%;
+    z-index: -1;
+    height: 90vh;
+}
+
+/*Navbar sticky + effet ombre*/
+
+.nav-sticky {
+    box-shadow: 0 -20px 20px 10px rgba(0, 0, 0, 0.4);
+}
+
+/*Effet sticky de la navbar*/
+
+#navbar-main{
+    margin-bottom: 0;
+
+}
+
+#navbar-main .affix {
+}
+
+#navbar-main.affixed-top {
+    background: black;
+}
+
+#navbar-main.affix {
+    background: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+/*Fin de la navabr*/
+
+section {
+    background-color: white;
+    padding-top: 6em;
+}
+
+
+.carousel-inner > .item > img {
+    margin: auto;
+}
+
+#beerText p {
+    text-align: justify;
+    display: inline;
+    vertical-align: bottom;
+}
+
+/*Debut carousel*/
+
+.carousel {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 3em;
+    padding: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*Fin carousel*/
+
+.icons
+{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.google-maps {
+    position: relative;
+    padding-bottom: 100%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+/*Parametre des Polices + Panneau Titre*/
+
+/*Debut Panneau Titre taille md et lg*/
+
+h1 {
+    font-size: 6vw;
+    text-align: center;
+    height:40vw;
+    color: white;
+    font-family: "Impact";
+}
+
+.panneau-titre .happy-hours {
+    font-size:5vh;
+    color: black;
+    text-align: center;
+}
+
+.panneau-titre .info-panneau {
+    font-size:3vh;
+    color: black;
+    text-align: center;
+}
+/* Fin Panneau Titre*/
+
+/*Debut Panneau Titre taille xs et sm*/
+
+.panneau-titre-sm h1 {
+    font-size: 15vw;
+    text-align: center;
+    color: white;
+    font-family: "Impact";
+}
+
+.panneau-titre-sm .happy-hours {
+    font-size:6vh;
+    color: black;
+    text-align: center;
+}
+
+.panneau-titre-sm .info-panneau {
+    font-size:5vh;
+    color: black;
+    text-align: center;
+}
+/* Fin Panneau Titre*/
+
+h2 {
+    font-size: 5vw;
+    text-align: center;
+    height:20vw;
+    margin: 0;
+    color: black;
+    font-family: "Impact";
+}
+
+h3 {
+    font-size: 2vw;
+    text-align: center;
+    height:20vw;
+    margin: 0;
+    color: black;
+    font-family: "Impact";
+}
+
+#section2 h2 {
+    height: 10vw;
+    font-size: x-large;
+}
+
+
+#section2 h3 {
+
+    height:5vw;
+    font-size: larger;
+}
+
+#section3 h2 {
+    height: 10vw;
+}
+
+#section3 h3 {
+    height: 5vw;
+}
+
+#section3 img {
+    width: 100%;
+
+}
+
+#section2 button {
+    float: right;
+    margin-bottom: 1em;
+}
+
