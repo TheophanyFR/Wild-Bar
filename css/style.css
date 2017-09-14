@@ -1,3 +1,8 @@
+section {
+    background-color: white;
+    padding-top: 6em;
+}
+
 /*Paramètre général*/
 
 /*Bandeau titre*/
@@ -108,24 +113,19 @@
 
 /*Fin de la navabr*/
 
-section {
-    background-color: white;
-    padding-top: 6em;
-}
+
 
 
 .carousel-inner > .item > img {
     margin: auto;
 }
 
-#beerText p {
+#beerTextFullscreen { /* Version Fullscreen */
     text-align: justify;
-    display: inline;
-    vertical-align: bottom;
+    font-size: 1.5em;
 }
 
 /*Debut carousel*/
-
 .carousel {
     border-radius: 20px;
     overflow: hidden;
@@ -139,31 +139,69 @@ section {
     right: 0;
     bottom: 0;
 }
-
 /*Fin carousel*/
 
-.icons
-{
+#beerTextSmartphone { /* Version Smartphone */
+    text-align: justify;
+    font-size: 2em;
+}
+
+
+.icons {
 
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 
 }
-
 
 .google-maps {
     position: relative;
-    padding-bottom: 100%; // This is the aspect ratio
-    height: 0;
+    padding-bottom: 100%;
+/ / This is the aspect ratio height: 0;
     overflow: hidden;
 }
+
 .google-maps iframe {
+    border-radius: 10px;
     position: absolute;
     top: 0;
     left: 0;
     width: 100% !important;
     height: 100% !important;
 }
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 3.0em;
+
+}
+
+#equipe_full {
+    padding-bottom: 20em;
+}
+
+#equipe_small {
+    padding-bottom: 5em;
+}
+
+#section4 img {
+    border-radius: 15px;
+}
+
+#section4 p {
+    padding: 20px 0 20px 0;
+    font-size: 1.5em;
+    text-align: justify;
+
+}
+
+#nav_smallscreen, .adress_small, .days_small {
+
+    padding: 20px 0 20px 0;
+}
+
 
 
 /*Parametre des Polices + Panneau Titre*/
@@ -216,7 +254,6 @@ h1 {
 h2 {
     font-size: 5vw;
     text-align: center;
-    height:20vw;
     margin: 0;
     color: black;
     font-family: "Impact";
