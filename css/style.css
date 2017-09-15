@@ -1,7 +1,4 @@
-section {
-    background-color: white;
-    padding-top: 6em;
-}
+
 
 /*Paramètre général*/
 
@@ -37,20 +34,27 @@ section {
     position: fixed;
 }
 
+/*Espace vide afin d'afficher la nav bar en dessous de l'image*/
 
+.escpace-vide {
+    width: 100%;
+    height: 90vh;
+    background-color: white;
+    opacity: 0.2;
+}
 
 /*Panneau + Titre taille md et lg*/
 
 .panneau-titre {
-    background-color: #adadad;
-    border: 5px solid;
+    background-color: #B7B8BD;
+    border: 5px solid black;
     border-style:double;
-    height: 50vh;
+    height: 60vh;
     width: 23vw;
     margin-right: auto;
     margin-left: auto;
-    opacity: 0.9;
     background-size: cover;
+    box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.4);
 }
 
 /*Panneau + Titre taille xs et sm*/
@@ -67,159 +71,27 @@ section {
     position: relative;
 }
 
-/*Custom navbar*/
-
-.navbar {
-    min-height: 10vh;
-    padding-top: 2vh;
-    font-size: 2vh;
+.bouton-action {
+    z-index: 4;
 }
-
-/*Espace vide afin d'afficher la nav bar en dessous de l'image*/
-
-.escpace-vide {
-    width: 50%;
-    z-index: -1;
-    height: 90vh;
-}
-
-/*Navbar sticky + effet ombre*/
-
-.nav-sticky {
-    box-shadow: 0 -20px 20px 10px rgba(0, 0, 0, 0.4);
-}
-
-/*Effet sticky de la navbar*/
-
-#navbar-main{
-    margin-bottom: 0;
-
-}
-
-#navbar-main .affix {
-}
-
-#navbar-main.affixed-top {
-    background: black;
-}
-
-#navbar-main.affix {
-    background: black;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-}
-
-/*Fin de la navabr*/
-
-
-
-
-.carousel-inner > .item > img {
-    margin: auto;
-}
-
-.beerTextFullscreen { /* Version Fullscreen */
-    text-align: justify;
-    font-size: 1.5em;
-}
-
-/*Debut carousel*/
-.carousel {
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.carousel-caption {
-    background: rgba(0, 0, 0, 0.8);
-    font-size: 3em;
-    padding: 5px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-/*Fin carousel*/
-
-.beerTextSmartphone { /* Version Smartphone */
-    text-align: justify;
-    font-size: 2em;
-}
-
-
-.icons {
-
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-
-}
-
-.google-maps {
-    position: relative;
-    padding-bottom: 100%;
-/ / This is the aspect ratio height: 0;
-    overflow: hidden;
-}
-
-.google-maps iframe {
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
-}
-
-footer {
-    background-color: black;
-    color: white;
-    padding: 3.0em;
-
-}
-
-#equipe_full {
-    padding-bottom: 20em;
-}
-
-#equipe_small {
-    padding-bottom: 5em;
-}
-
-#section4 img {
-    border-radius: 10px;
-}
-
-#section4 p {
-    padding: 20px 0 20px 0;
-    font-size: 1.5em;
-    text-align: justify;
-
-}
-
-#nav_smallscreen, .adress_small, .days_small {
-
-    padding: 20px 0 20px 0;
-}
-
-
-
-/*Parametre des Polices + Panneau Titre*/
 
 /*Debut Panneau Titre taille md et lg*/
 
 h1 {
-    font-size: 6vw;
+    font-size: 7vw;
     text-align: center;
-    height:40vw;
+    height:100%;
     color: white;
-    font-family: "Impact";
+    font-family:'Oswald', sans-serif;
+    display: block;
 }
 
 .panneau-titre .happy-hours {
     font-size:5vh;
     color: black;
     text-align: center;
+    font-family:'Roboto', sans-serif;
+    margin:0;
 }
 
 .panneau-titre .info-panneau {
@@ -251,12 +123,161 @@ h1 {
 }
 /* Fin Panneau Titre*/
 
+/*Custom navbar*/
+
+.navbar {
+    min-height: 10vh;
+    padding-top: 2vh;
+    font-size: 2vh;
+}
+
+/*Navbar sticky + effet ombre*/
+
+.nav-sticky {
+    box-shadow: 0 -20px 20px 10px rgba(0, 0, 0, 0.4);
+}
+
+a .nav#navbar-main {
+    font-size: 3vh;
+}
+
+/*Effet sticky de la navbar*/
+
+#navbar-main{
+    margin-bottom: 0;
+
+}
+
+#navbar-main .affix {
+}
+
+#navbar-main.affixed-top {
+    background: black;
+}
+
+#navbar-main.affix {
+    background: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+/*Fin de la navabr*/
+
+
+/*Debut carousel*/
+
+.carousel-inner > .item > img {
+    margin: auto;
+}
+
+.beerTextFullscreen { /* Version Fullscreen */
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+.carousel {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 3em;
+    padding: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*Fin carousel*/
+
+.beerTextSmartphone { /* Version Smartphone */
+    text-align: justify;
+    font-size: 2em;
+}
+
+/* début section l'équipe */
+.icons {
+
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 100%;
+/ / This is the aspect ratio height: 0;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 3.0em;
+
+}
+
+
+.equipe_full {
+    padding-bottom: 20em;
+}
+
+.equipe_small {
+    padding-bottom: 5em;
+}
+
+#section4 img {
+    border-radius: 10px;
+}
+
+#section4 p {
+    padding: 10px 0 20px 0;
+    font-size: 1.5em;
+    text-align: justify;
+
+}
+
+.nav_smallscreen, .nav_fullscreen li{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.nav_smallscreen, .adress_small, .days_small {
+
+    padding: 20px 0 20px 0;
+}
+
+
+/* fin partie l'équipe */
+
+
+/*Parametre des Polices + Panneau Titre*/
+
 h2 {
     font-size: 5vw;
     text-align: center;
+    width: 40vw;
     margin: 0;
     color: black;
     font-family: "Impact";
+    margin-left: 30vw;
+    margin-bottom: 1.5em;
+    border: solid 2px;
+    border-style:hidden hidden double double;
+    padding-bottom: 5vh;
 }
 
 h3 {
@@ -268,33 +289,47 @@ h3 {
     font-family: "Impact";
 }
 
-#section2 h2 {
-    height: 10vw;
-    font-size: x-large;
+/*style section carte et jeux*/
+
+}
+.carte h2 {
+    font-size: 5vw;
+}
+
+.carte h3 {
+    font-size: 2vw;
+}
+
+.carte p {
+    font-size: 1vw  ;
+}
+
+.screen-modal {
+    font-size: 2vw;
 }
 
 
-#section2 h3 {
-
-    height:5vw;
-    font-size: larger;
+.jeux {
+    border: solid 1px black;
 }
 
-#section3 h2 {
-    height: 10vw;
-}
-
-#section3 h3 {
+.jeux h3 {
     height: 5vw;
 }
 
-#section3 img {
+.jeux h3 {
+    height: 5vw;
+}
+
+.jeux img {
     width: 100%;
 
 }
 
-#section2 button {
-    float: right;
-    margin-bottom: 1em;
+.xs-screen-thumbnail {
+    font-size: x-large;
+
 }
+
+/* fin style section carte et jeux*/
 
