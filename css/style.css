@@ -1,0 +1,366 @@
+
+
+/*Paramètre général*/
+
+/*Background color*/
+
+section {
+    background-color: whitesmoke;
+}
+
+/*Bandeau titre*/
+
+.container-fluid {
+    padding: 0;
+}
+
+/*Bandeau Image */
+
+.bandeau_titre {
+    background-image: url("../img/bar.png");
+    background-size: cover;
+    background-position-y:-10em;
+    background-repeat: no-repeat;
+    width: 100%;
+    z-index: -1;
+    height: 100vh;
+    padding-top: 5em;
+    position: fixed;
+}
+
+.bandeau_titre-sm {
+    background-image: url("../img/bar.png");
+    background-position-y:-10em;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 10vh;
+    padding-top: 5vh;
+    z-index: -1;
+    height: 100vh;
+    position: fixed;
+}
+
+/*Espace vide afin d'afficher la nav bar en dessous de l'image*/
+
+.escpace-vide {
+    width: 100%;
+    height: 90vh;
+    background-color: white;
+    opacity: 0.2;
+}
+
+/*Panneau + Titre taille md et lg*/
+
+.panneau-titre {
+    background-color: #B7B8BD;
+    border: 5px solid black;
+    border-style:double;
+    height: auto;
+    width: 30vw;
+    margin-right: auto;
+    margin-left: auto;
+    background-size: cover;
+    box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.4);
+}
+
+/*Panneau + Titre taille xs et sm*/
+
+.panneau-titre-sm {
+    background-color: #adadad;
+    border: 5px solid;
+    border-style:double;
+    height: 70vh;
+    width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.bouton-action {
+    z-index: 4;
+}
+
+/*Debut Panneau Titre taille md et lg*/
+
+h1 {
+    font-size: 11vw;
+    text-align: center;
+    height:100%;
+    color: white;
+    font-family: 'Lobster', cursive;
+    display: block;
+}
+
+.happy-hours {
+    font-size:7vh;
+    color: black;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    margin:0;
+}
+
+.info-panneau {
+    font-size:4vh;
+    color: black;
+    text-align: center;
+}
+/* Fin Panneau Titre*/
+
+/*Debut Panneau Titre taille xs et sm*/
+
+.panneau-titre-sm h1 {
+    font-size: 15vw;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Lobster', cursive;
+}
+
+.panneau-titre-sm .happy-hours {
+    font-size:6vh;
+    color: black;
+    text-align: center;
+}
+
+.panneau-titre-sm .info-panneau {
+    font-size:5vh;
+    color: black;
+    text-align: center;
+}
+/* Fin Panneau Titre*/
+
+/*Custom navbar*/
+
+.navbar {
+    min-height: 10vh;
+    padding-top: 2vh;
+    font-size: 3vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Navbar sticky + effet ombre*/
+
+.nav-sticky {
+    box-shadow: 0 -20px 20px 10px rgba(0, 0, 0, 0.4);
+}
+
+a .nav#navbar-main {
+    font-size: 3vh;
+}
+
+/*Effet sticky de la navbar*/
+
+#navbar-main{
+    margin-bottom: 0;
+
+}
+
+#navbar-main .affix {
+}
+
+#navbar-main.affixed-top {
+    background: black;
+}
+
+#navbar-main.affix {
+    background: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+/*Fin de la navabr*/
+
+
+/*Debut carousel*/
+
+.beerTextFullscreen p { /* Version Smartphone */
+    font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
+}
+
+.carousel-inner > .item > img {
+    margin: auto;
+}
+
+.beerTextFullscreen { /* Version Fullscreen */
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+.carousel {
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 3em;
+    padding: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*Fin carousel*/
+
+
+/* début section l'équipe */
+.icons {
+
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 100%;
+/ / This is the aspect ratio height: 0;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    padding: 3.0em;
+
+}
+
+
+.equipe_full {
+    padding-bottom: 5em;
+}
+
+.equipe_small {
+    padding-bottom: 5em;
+}
+
+#section4 img {
+    border-radius: 3px;
+}
+
+#section4 p {
+    padding: 10px 0 20px 0;
+    font-size: 1.5em;
+    text-align: justify;
+
+}
+
+.nav_smallscreen, .nav_fullscreen li{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.nav_smallscreen, .adress_small, .days_small {
+
+    padding: 20px 0 20px 0;
+}
+
+.nav-footer li {
+    font-size: 3vh;
+    list-style: none;
+
+}
+
+/* fin partie l'équipe */
+
+
+/*Parametre des Polices + Panneau Titre*/
+
+h2 {
+    font-size: 5vw;
+    background-color: whitesmoke;
+    text-align: center;
+    width: 40vw;
+    color: black;
+    font-family: 'Lobster Two', cursive;
+    padding-top: 15vh;
+    margin-left: 30vw;
+    margin-top:0;
+    margin-bottom: 1.5em;
+    border: solid 2px;
+    border-style:hidden hidden double double;
+    padding-bottom: 5vh;
+}
+
+h3 {
+    font-size: 2vw;
+    text-align: center;
+    height:20vw;
+    margin: 0;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+h4 {
+    font-family: 'Lobster Two', cursive;
+}
+
+.caption {
+    font-family: 'Lobster Two', cursive;
+}
+
+.caption button{
+    font-size: 2em;
+    background-color: black;
+}
+
+.carousel-caption {
+    font-family: 'Lobster Two', cursive;
+}
+/*style section carte et jeux*/
+
+.carte h2 {
+    font-size: 5vw;
+}
+
+.carte h3 {
+    font-size: 2vw;
+}
+
+.carte p {
+    font-size: 1vw  ;
+}
+
+.screen-modal {
+    font-size: 2vw;
+}
+
+.ijeux {
+    border-radius: 3px;
+}
+
+.jeux h3 {
+    height: 5vw;
+}
+
+.jeux h3 {
+    height: 5vw;
+}
+
+.jeux img {
+    width: 100%;
+
+}
+
+.xs-screen-thumbnail {
+    font-size: x-large;
+
+}
+
+.nav-footer {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* fin style section carte et jeux*/
