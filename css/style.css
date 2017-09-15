@@ -1,7 +1,4 @@
-section {
-    background-color: white;
-    padding-top: 6em;
-}
+
 
 /*Paramètre général*/
 
@@ -37,20 +34,27 @@ section {
     position: fixed;
 }
 
+/*Espace vide afin d'afficher la nav bar en dessous de l'image*/
 
+.escpace-vide {
+    width: 100%;
+    height: 90vh;
+    background-color: white;
+    opacity: 0.2;
+}
 
 /*Panneau + Titre taille md et lg*/
 
 .panneau-titre {
-    background-color: #adadad;
-    border: 5px solid;
+    background-color: #B7B8BD;
+    border: 5px solid black;
     border-style:double;
-    height: 50vh;
+    height: 60vh;
     width: 23vw;
     margin-right: auto;
     margin-left: auto;
-    opacity: 0.9;
     background-size: cover;
+    box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.4);
 }
 
 /*Panneau + Titre taille xs et sm*/
@@ -67,6 +71,58 @@ section {
     position: relative;
 }
 
+.bouton-action {
+    z-index: 4;
+}
+
+/*Debut Panneau Titre taille md et lg*/
+
+h1 {
+    font-size: 7vw;
+    text-align: center;
+    height:100%;
+    color: white;
+    font-family:'Oswald', sans-serif;
+    display: block;
+}
+
+.panneau-titre .happy-hours {
+    font-size:5vh;
+    color: black;
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+    margin:0;
+}
+
+.panneau-titre .info-panneau {
+    font-size:3vh;
+    color: black;
+    text-align: center;
+}
+/* Fin Panneau Titre*/
+
+/*Debut Panneau Titre taille xs et sm*/
+
+.panneau-titre-sm h1 {
+    font-size: 15vw;
+    text-align: center;
+    color: white;
+    font-family: "Impact";
+}
+
+.panneau-titre-sm .happy-hours {
+    font-size:6vh;
+    color: black;
+    text-align: center;
+}
+
+.panneau-titre-sm .info-panneau {
+    font-size:5vh;
+    color: black;
+    text-align: center;
+}
+/* Fin Panneau Titre*/
+
 /*Custom navbar*/
 
 .navbar {
@@ -75,18 +131,14 @@ section {
     font-size: 2vh;
 }
 
-/*Espace vide afin d'afficher la nav bar en dessous de l'image*/
-
-.escpace-vide {
-    width: 50%;
-    z-index: -1;
-    height: 90vh;
-}
-
 /*Navbar sticky + effet ombre*/
 
 .nav-sticky {
     box-shadow: 0 -20px 20px 10px rgba(0, 0, 0, 0.4);
+}
+
+a .nav#navbar-main {
+    font-size: 3vh;
 }
 
 /*Effet sticky de la navbar*/
@@ -114,7 +166,7 @@ section {
 /*Fin de la navabr*/
 
 
-
+/*Debut carousel*/
 
 .carousel-inner > .item > img {
     margin: auto;
@@ -125,7 +177,6 @@ section {
     font-size: 1.5em;
 }
 
-/*Debut carousel*/
 .carousel {
     border-radius: 20px;
     overflow: hidden;
@@ -139,6 +190,7 @@ section {
     right: 0;
     bottom: 0;
 }
+
 /*Fin carousel*/
 
 #beerTextSmartphone { /* Version Smartphone */
@@ -179,7 +231,7 @@ footer {
 }
 
 #equipe_full {
-    padding-bottom: 20em;
+    padding-bottom: 3em;
 }
 
 #equipe_small {
@@ -203,60 +255,20 @@ footer {
 }
 
 
-
 /*Parametre des Polices + Panneau Titre*/
-
-/*Debut Panneau Titre taille md et lg*/
-
-h1 {
-    font-size: 6vw;
-    text-align: center;
-    height:40vw;
-    color: white;
-    font-family: "Impact";
-}
-
-.panneau-titre .happy-hours {
-    font-size:5vh;
-    color: black;
-    text-align: center;
-}
-
-.panneau-titre .info-panneau {
-    font-size:3vh;
-    color: black;
-    text-align: center;
-}
-/* Fin Panneau Titre*/
-
-/*Debut Panneau Titre taille xs et sm*/
-
-.panneau-titre-sm h1 {
-    font-size: 15vw;
-    text-align: center;
-    color: white;
-    font-family: "Impact";
-}
-
-.panneau-titre-sm .happy-hours {
-    font-size:6vh;
-    color: black;
-    text-align: center;
-}
-
-.panneau-titre-sm .info-panneau {
-    font-size:5vh;
-    color: black;
-    text-align: center;
-}
-/* Fin Panneau Titre*/
 
 h2 {
     font-size: 5vw;
     text-align: center;
+    width: 40vw;
     margin: 0;
     color: black;
     font-family: "Impact";
+    margin-left: 30vw;
+    margin-bottom: 1.5em;
+    border: solid 2px;
+    border-style:hidden hidden double double;
+    padding-bottom: 5vh;
 }
 
 h3 {
@@ -270,7 +282,6 @@ h3 {
 
 #section2 h2 {
     height: 10vw;
-    font-size: x-large;
 }
 
 
@@ -298,3 +309,9 @@ h3 {
     margin-bottom: 1em;
 }
 
+/*changement couleur section */
+
+section {
+    background-color: #EDEDED;
+    padding-top: 6em;
+}
