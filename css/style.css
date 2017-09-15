@@ -2,6 +2,12 @@
 
 /*Paramètre général*/
 
+/*Background color*/
+
+section {
+    background-color: whitesmoke;
+}
+
 /*Bandeau titre*/
 
 .container-fluid {
@@ -49,8 +55,8 @@
     background-color: #B7B8BD;
     border: 5px solid black;
     border-style:double;
-    height: 60vh;
-    width: 23vw;
+    height: 70vh;
+    width: 30vw;
     margin-right: auto;
     margin-left: auto;
     background-size: cover;
@@ -78,24 +84,24 @@
 /*Debut Panneau Titre taille md et lg*/
 
 h1 {
-    font-size: 7vw;
+    font-size: 11vw;
     text-align: center;
     height:100%;
     color: white;
-    font-family:'Oswald', sans-serif;
+    font-family: 'Lobster', cursive;
     display: block;
 }
 
-.panneau-titre .happy-hours {
-    font-size:5vh;
+.happy-hours {
+    font-size:7vh;
     color: black;
     text-align: center;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Lobster Two', cursive;
     margin:0;
 }
 
-.panneau-titre .info-panneau {
-    font-size:3vh;
+.info-panneau {
+    font-size:4vh;
     color: black;
     text-align: center;
 }
@@ -107,7 +113,7 @@ h1 {
     font-size: 15vw;
     text-align: center;
     color: white;
-    font-family: "Impact";
+    font-family: 'Lobster', cursive;
 }
 
 .panneau-titre-sm .happy-hours {
@@ -178,7 +184,7 @@ a .nav#navbar-main {
 }
 
 .carousel {
-    border-radius: 10px;
+    border-radius: 3px;
     overflow: hidden;
 }
 
@@ -215,7 +221,7 @@ a .nav#navbar-main {
 }
 
 .google-maps iframe {
-    border-radius: 10px;
+    border-radius: 3px;
     position: absolute;
     top: 0;
     left: 0;
@@ -232,7 +238,7 @@ footer {
 
 
 .equipe_full {
-    padding-bottom: 20em;
+    padding-bottom: 5em;
 }
 
 .equipe_small {
@@ -240,7 +246,7 @@ footer {
 }
 
 #section4 img {
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 #section4 p {
@@ -260,6 +266,11 @@ footer {
     padding: 20px 0 20px 0;
 }
 
+.nav-footer li {
+    font-size: 3vh;
+    list-style: none;
+
+}
 
 /* fin partie l'équipe */
 
@@ -272,7 +283,8 @@ h2 {
     width: 40vw;
     margin: 0;
     color: black;
-    font-family: "Impact";
+    font-family: 'Lobster Two', cursive;
+    padding-top: 15vh;
     margin-left: 30vw;
     margin-bottom: 1.5em;
     border: solid 2px;
@@ -286,12 +298,31 @@ h3 {
     height:20vw;
     margin: 0;
     color: black;
-    font-family: "Impact";
+    font-family: 'Raleway', sans-serif;
 }
 
+h4 {
+    font-family: 'Lobster Two', cursive;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.caption {
+    font-family: 'Lobster Two', cursive;
+}
+
+.caption button{
+    font-size: 2em;
+    background-color: black;
+}
+
+.carousel-caption {
+    font-family: 'Lobster Two', cursive;
+}
 /*style section carte et jeux*/
 
-}
 .carte h2 {
     font-size: 5vw;
 }
@@ -308,9 +339,8 @@ h3 {
     font-size: 2vw;
 }
 
-
-.jeux {
-    border: solid 1px black;
+.ijeux {
+    border-radius: 3px;
 }
 
 .jeux h3 {
