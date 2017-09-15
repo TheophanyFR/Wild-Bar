@@ -146,7 +146,7 @@ section {
     font-size: 2em;
 }
 
-
+/* début section l'équipe */
 .icons {
 
     display: flex;
@@ -178,31 +178,36 @@ footer {
 
 }
 
-#equipe_full {
+.equipe_full {
     padding-bottom: 20em;
 }
 
-#equipe_small {
+.equipe_small {
     padding-bottom: 5em;
 }
 
-#section4 img {
+.section4 img {
     border-radius: 15px;
 }
 
-#section4 p {
-    padding: 20px 0 20px 0;
+.section4 p {
+    padding: 10px 0 20px 0;
     font-size: 1.5em;
     text-align: justify;
 
 }
 
-#nav_smallscreen, .adress_small, .days_small {
+.nav_smallscreen, .nav_fullscreen li{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.nav_smallscreen, .adress_small, .days_small {
 
     padding: 20px 0 20px 0;
 }
 
-
+/* fin partie l'équipe */
 
 /*Parametre des Polices + Panneau Titre*/
 
