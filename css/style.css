@@ -55,7 +55,7 @@ section {
     background-color: #B7B8BD;
     border: 5px solid black;
     border-style:double;
-    height: 70vh;
+    height: auto;
     width: 30vw;
     margin-right: auto;
     margin-left: auto;
@@ -73,7 +73,6 @@ section {
     width: 80vw;
     margin-right: auto;
     margin-left: auto;
-    opacity: 0.9;
     position: relative;
 }
 
@@ -112,7 +111,7 @@ h1 {
 .panneau-titre-sm h1 {
     font-size: 15vw;
     text-align: center;
-    color: white;
+    color: whitesmoke;
     font-family: 'Lobster', cursive;
 }
 
@@ -134,7 +133,8 @@ h1 {
 .navbar {
     min-height: 10vh;
     padding-top: 2vh;
-    font-size: 2vh;
+    font-size: 3vh;
+    font-family: 'Raleway', sans-serif;
 }
 
 /*Navbar sticky + effet ombre*/
@@ -231,7 +231,7 @@ a .nav#navbar-main {
 
 footer {
     background-color: black;
-    color: white;
+    color: whitesmoke;
     padding: 3.0em;
 
 }
@@ -279,13 +279,14 @@ footer {
 
 h2 {
     font-size: 5vw;
+    background-color: whitesmoke;
     text-align: center;
     width: 40vw;
-    margin: 0;
     color: black;
     font-family: 'Lobster Two', cursive;
     padding-top: 15vh;
     margin-left: 30vw;
+    margin-top:0;
     margin-bottom: 1.5em;
     border: solid 2px;
     border-style:hidden hidden double double;
@@ -307,6 +308,7 @@ h4 {
 
 p {
     font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
 }
 
 .caption {
@@ -359,6 +361,10 @@ p {
 .xs-screen-thumbnail {
     font-size: x-large;
 
+}
+
+.nav-footer {
+    font-family: 'Raleway', sans-serif;
 }
 
 /* fin style section carte et jeux*/
