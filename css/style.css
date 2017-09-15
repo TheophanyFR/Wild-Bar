@@ -120,14 +120,14 @@ section {
     margin: auto;
 }
 
-#beerTextFullscreen { /* Version Fullscreen */
+.beerTextFullscreen { /* Version Fullscreen */
     text-align: justify;
     font-size: 1.5em;
 }
 
 /*Debut carousel*/
 .carousel {
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -141,7 +141,7 @@ section {
 }
 /*Fin carousel*/
 
-#beerTextSmartphone { /* Version Smartphone */
+.beerTextSmartphone { /* Version Smartphone */
     text-align: justify;
     font-size: 2em;
 }
@@ -187,7 +187,7 @@ footer {
 }
 
 #section4 img {
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 #section4 p {
