@@ -280,38 +280,47 @@ h3 {
     font-family: "Impact";
 }
 
-#section2 h2 {
-    height: 10vw;
+/*style section carte et jeux*/
+
+}
+.carte h2 {
+    font-size: 5vw;
+}
+
+.carte h3 {
+    font-size: 2vw;
+}
+
+.carte p {
+    font-size: 1vw  ;
+}
+
+.screen-modal {
+    font-size: 2vw;
 }
 
 
-#section2 h3 {
-
-    height:5vw;
-    font-size: larger;
+.jeux {
+    border: solid 1px black;
 }
 
-#section3 h2 {
-    height: 10vw;
-}
-
-#section3 h3 {
+.jeux h3 {
     height: 5vw;
 }
 
-#section3 img {
+.jeux h3 {
+    height: 5vw;
+}
+
+.jeux img {
     width: 100%;
 
 }
 
-#section2 button {
-    float: right;
-    margin-bottom: 1em;
+.xs-screen-thumbnail {
+    font-size: x-large;
+
 }
 
-/*changement couleur section */
+/* fin style section carte et jeux*/
 
-section {
-    background-color: #EDEDED;
-    padding-top: 6em;
-}
