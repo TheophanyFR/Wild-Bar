@@ -341,17 +341,22 @@ p {
     font-size: 2vw;
 }
 
+.sans-alcool {
+    margin: 0px;
+    padding: 0px;
+    background-color: aqua;
+    width: 90%;
+}
+
 .ijeux {
     border-radius: 3px;
 }
 
 .jeux h3 {
     height: 5vw;
+    font-family: 'Raleway', sans-serif;
 }
 
-.jeux h3 {
-    height: 5vw;
-}
 
 .jeux img {
     width: 100%;
