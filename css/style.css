@@ -1,9 +1,12 @@
-section {
-    background-color: white;
-    padding-top: 6em;
-}
+
 
 /*Paramètre général*/
+
+/*Background color*/
+
+section {
+    background-color: whitesmoke;
+}
 
 /*Bandeau titre*/
 
@@ -37,20 +40,27 @@ section {
     position: fixed;
 }
 
+/*Espace vide afin d'afficher la nav bar en dessous de l'image*/
 
+.escpace-vide {
+    width: 100%;
+    height: 90vh;
+    background-color: white;
+    opacity: 0.2;
+}
 
 /*Panneau + Titre taille md et lg*/
 
 .panneau-titre {
-    background-color: #adadad;
-    border: 5px solid;
+    background-color: #B7B8BD;
+    border: 5px solid black;
     border-style:double;
-    height: 50vh;
-    width: 23vw;
+    height: auto;
+    width: 30vw;
     margin-right: auto;
     margin-left: auto;
-    opacity: 0.9;
     background-size: cover;
+    box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.4);
 }
 
 /*Panneau + Titre taille xs et sm*/
@@ -63,30 +73,78 @@ section {
     width: 80vw;
     margin-right: auto;
     margin-left: auto;
-    opacity: 0.9;
     position: relative;
 }
+
+.bouton-action {
+    z-index: 4;
+}
+
+/*Debut Panneau Titre taille md et lg*/
+
+h1 {
+    font-size: 11vw;
+    text-align: center;
+    height:100%;
+    color: white;
+    font-family: 'Lobster', cursive;
+    display: block;
+}
+
+.happy-hours {
+    font-size:7vh;
+    color: black;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    margin:0;
+}
+
+.info-panneau {
+    font-size:4vh;
+    color: black;
+    text-align: center;
+}
+/* Fin Panneau Titre*/
+
+/*Debut Panneau Titre taille xs et sm*/
+
+.panneau-titre-sm h1 {
+    font-size: 15vw;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Lobster', cursive;
+}
+
+.panneau-titre-sm .happy-hours {
+    font-size:6vh;
+    color: black;
+    text-align: center;
+}
+
+.panneau-titre-sm .info-panneau {
+    font-size:5vh;
+    color: black;
+    text-align: center;
+}
+/* Fin Panneau Titre*/
 
 /*Custom navbar*/
 
 .navbar {
     min-height: 10vh;
     padding-top: 2vh;
-    font-size: 2vh;
-}
-
-/*Espace vide afin d'afficher la nav bar en dessous de l'image*/
-
-.escpace-vide {
-    width: 50%;
-    z-index: -1;
-    height: 90vh;
+    font-size: 3vh;
+    font-family: 'Raleway', sans-serif;
 }
 
 /*Navbar sticky + effet ombre*/
 
 .nav-sticky {
     box-shadow: 0 -20px 20px 10px rgba(0, 0, 0, 0.4);
+}
+
+a .nav#navbar-main {
+    font-size: 3vh;
 }
 
 /*Effet sticky de la navbar*/
@@ -114,20 +172,19 @@ section {
 /*Fin de la navabr*/
 
 
-
+/*Debut carousel*/
 
 .carousel-inner > .item > img {
     margin: auto;
 }
 
-#beerTextFullscreen { /* Version Fullscreen */
+.beerTextFullscreen { /* Version Fullscreen */
     text-align: justify;
     font-size: 1.5em;
 }
 
-/*Debut carousel*/
 .carousel {
-    border-radius: 20px;
+    border-radius: 3px;
     overflow: hidden;
 }
 
@@ -139,14 +196,15 @@ section {
     right: 0;
     bottom: 0;
 }
+
 /*Fin carousel*/
 
-#beerTextSmartphone { /* Version Smartphone */
+.beerTextSmartphone { /* Version Smartphone */
     text-align: justify;
     font-size: 2em;
 }
 
-
+/* début section l'équipe */
 .icons {
 
     display: flex;
@@ -163,7 +221,7 @@ section {
 }
 
 .google-maps iframe {
-    border-radius: 10px;
+    border-radius: 3px;
     position: absolute;
     top: 0;
     left: 0;
@@ -173,90 +231,66 @@ section {
 
 footer {
     background-color: black;
-    color: white;
+    color: whitesmoke;
     padding: 3.0em;
 
 }
 
-#equipe_full {
-    padding-bottom: 20em;
+
+.equipe_full {
+    padding-bottom: 5em;
 }
 
-#equipe_small {
+.equipe_small {
     padding-bottom: 5em;
 }
 
 #section4 img {
-    border-radius: 15px;
+    border-radius: 3px;
 }
 
 #section4 p {
-    padding: 20px 0 20px 0;
+    padding: 10px 0 20px 0;
     font-size: 1.5em;
     text-align: justify;
 
 }
 
-#nav_smallscreen, .adress_small, .days_small {
+.nav_smallscreen, .nav_fullscreen li{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.nav_smallscreen, .adress_small, .days_small {
 
     padding: 20px 0 20px 0;
 }
 
+.nav-footer li {
+    font-size: 3vh;
+    list-style: none;
+
+}
+
+/* fin partie l'équipe */
 
 
 /*Parametre des Polices + Panneau Titre*/
 
-/*Debut Panneau Titre taille md et lg*/
-
-h1 {
-    font-size: 6vw;
-    text-align: center;
-    height:40vw;
-    color: white;
-    font-family: "Impact";
-}
-
-.panneau-titre .happy-hours {
-    font-size:5vh;
-    color: black;
-    text-align: center;
-}
-
-.panneau-titre .info-panneau {
-    font-size:3vh;
-    color: black;
-    text-align: center;
-}
-/* Fin Panneau Titre*/
-
-/*Debut Panneau Titre taille xs et sm*/
-
-.panneau-titre-sm h1 {
-    font-size: 15vw;
-    text-align: center;
-    color: white;
-    font-family: "Impact";
-}
-
-.panneau-titre-sm .happy-hours {
-    font-size:6vh;
-    color: black;
-    text-align: center;
-}
-
-.panneau-titre-sm .info-panneau {
-    font-size:5vh;
-    color: black;
-    text-align: center;
-}
-/* Fin Panneau Titre*/
-
 h2 {
     font-size: 5vw;
+    background-color: whitesmoke;
     text-align: center;
-    margin: 0;
+    width: 40vw;
     color: black;
-    font-family: "Impact";
+    font-family: 'Lobster Two', cursive;
+    padding-top: 15vh;
+    margin-left: 30vw;
+    margin-top:0;
+    margin-bottom: 1.5em;
+    border: solid 2px;
+    border-style:hidden hidden double double;
+    padding-bottom: 5vh;
 }
 
 h3 {
@@ -265,12 +299,32 @@ h3 {
     height:20vw;
     margin: 0;
     color: black;
-    font-family: "Impact";
+    font-family: 'Raleway', sans-serif;
 }
 
+h4 {
+    font-family: 'Lobster Two', cursive;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
+}
+
+.caption {
+    font-family: 'Lobster Two', cursive;
+}
+
+.caption button{
+    font-size: 2em;
+    background-color: black;
+}
+
+.carousel-caption {
+    font-family: 'Lobster Two', cursive;
+}
 /*style section carte et jeux*/
 
-}
 .carte h2 {
     font-size: 5vw;
 }
@@ -287,9 +341,8 @@ h3 {
     font-size: 2vw;
 }
 
-
-.jeux {
-    border: solid 1px black;
+.ijeux {
+    border-radius: 3px;
 }
 
 .jeux h3 {
@@ -310,6 +363,11 @@ h3 {
 
 }
 
+.nav-footer {
+    font-family: 'Raleway', sans-serif;
+}
+
 
 
 /* fin style section carte et jeux*/
+
