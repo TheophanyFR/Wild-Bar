@@ -1,5 +1,3 @@
-
-
 /*Paramètre général*/
 
 body {
@@ -8,7 +6,7 @@ body {
 
 /*Background color*/
 
-.background-blanc{
+.background-blanc {
     background-color: whitesmoke;
 }
 
@@ -23,7 +21,6 @@ section {
 }
 
 /*Bandeau Image */
-
 
 .bandeau_titre {
     background-image: url("../img/bar3.jpg");
@@ -51,12 +48,12 @@ section {
 
 .panneau-titre {
     border: 10px solid white;
-    border-style:double;
+    border-style: double;
     height: 70vh;
     margin: 5vw 5vw 5vw 5vw;
     background-size: cover;
     box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.4);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 /*Panneau + Titre taille xs et sm*/
@@ -64,17 +61,17 @@ section {
 .panneau-titre-sm {
 
     border: 5px solid white;
-    border-style:double;
+    border-style: double;
     height: 85vh;
     width: 80vw;
     margin-right: auto;
     margin-left: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 /*Debut Button Header*/
 
-.button_header:hover{
+.button_header:hover {
     color: #adadad;
     text-decoration: none;
 }
@@ -83,7 +80,7 @@ section {
     display: block;
     margin: auto;
     background-color: #555555;
-    width:15vw;
+    width: 15vw;
     border: none;
     padding: 15px 15px;
     color: white;
@@ -92,8 +89,6 @@ section {
     font-size: calc(100% + 2vh);
     font-family: 'Lobster Two', cursive;
 }
-
-
 
 /*Debut Panneau Titre taille md et lg*/
 
@@ -107,21 +102,22 @@ h1 {
 }
 
 .happy-hours {
-    font-size:7vh;
+    font-size: 7vh;
     color: white;
     text-align: center;
     font-family: 'Lobster Two', cursive;
-    margin:0;
+    margin: 0;
     opacity: 1;
-    padding-top:5vh;
+    padding-top: 5vh;
 }
 
 .info-panneau {
-    font-size:3vh;
+    font-size: 3vh;
     color: white;
     text-align: center;
     opacity: 1;
 }
+
 /* Fin Panneau Titre*/
 
 /*Debut Panneau Titre taille xs et sm*/
@@ -134,16 +130,17 @@ h1 {
 }
 
 .panneau-titre-sm .happy-hours {
-    font-size:6vh;
+    font-size: 6vh;
     color: white;
     text-align: center;
 }
 
 .panneau-titre-sm .info-panneau {
-    font-size:5vh;
+    font-size: 5vh;
     color: white;
     text-align: center;
 }
+
 /* Fin Panneau Titre*/
 
 /*Custom navbar*/
@@ -171,7 +168,7 @@ a .nav#navbar-main {
 
 /*Effet sticky de la navbar*/
 
-#navbar-main{
+#navbar-main {
     margin-bottom: 0;
 
 }
@@ -202,15 +199,12 @@ a .nav#navbar-main {
     background-image: url("../img/beer.jpg");
 }
 
-
-
 /*Debut carousel*/
 
-
 .sous_titre {
-    border:none;
+    border: none;
     padding: 0;
-    width:10vw;
+    width: 10vw;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 0px;
@@ -237,14 +231,13 @@ a .nav#navbar-main {
     font-size: 3em;
     padding: 25px;
     border: 5px solid white;
-    border-style:double;
+    border-style: double;
     left: 0;
     right: 0;
     bottom: 0;
 }
 
 /*Fin carousel*/
-
 
 /* début section l'équipe */
 .icons {
@@ -278,7 +271,6 @@ footer {
 
 }
 
-
 .equipe_full {
     padding-bottom: 5em;
 }
@@ -298,7 +290,7 @@ footer {
 
 }
 
-.nav_smallscreen, .nav_fullscreen li{
+.nav_smallscreen, .nav_fullscreen li {
     text-align: center;
     padding-bottom: 10px;
 }
@@ -314,8 +306,26 @@ footer {
 
 }
 
-/* fin partie l'équipe */
+/* fin section l'équipe */
 
+/*Début bouton go back to top*/
+
+#goToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(0, 0, 0, 0.8); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/*Fin bouton go back to top*/
 
 /*Parametre des Polices + Panneau Titre*/
 
@@ -331,14 +341,14 @@ h2 {
     margin-right: auto;
     margin-bottom: 1.5em;
     border: solid 2px;
-    border-style:hidden hidden double double;
+    border-style: hidden hidden double double;
     padding-bottom: 5vh;
 }
 
 h3 {
     font-size: 2vw;
     text-align: center;
-    height:20vw;
+    height: 20vw;
     margin: 0;
     color: black;
     font-family: 'Raleway', sans-serif;
@@ -352,7 +362,7 @@ h4 {
     font-family: 'Lobster Two', cursive;
 }
 
-.caption button{
+.caption button {
     font-size: 2em;
     background-color: #222;
     border-color: #222;
@@ -361,6 +371,7 @@ h4 {
 .carousel-caption {
     font-family: 'Lobster Two', cursive;
 }
+
 /*style section carte et jeux*/
 
 .carte h2 {
@@ -372,7 +383,7 @@ h4 {
 }
 
 .carte p {
-    font-size: 1vw  ;
+    font-size: 1vw;
 }
 
 .screen-modal {
