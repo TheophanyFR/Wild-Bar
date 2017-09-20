@@ -16,13 +16,14 @@
     <div class="container-fluid">
         <div class="row">
             <div class="hidden-xs hidden-sm col-md-12 col-lg-12">
+
                 <div class="bandeau_titre"></div>
                 <div class="panneau-titre" class="hidden-xs col-sm-12 col-lg-12">
                     <p class="happy-hours">Un Bar de sauvageons éduqués</p>
-                    <h1>Wild-Bar</h1>
-                    <p class=" info-panneau"><br/>Le meilleur endroit pour partager de bons moments<br/>avec vos amis
-                    </p>
-                    <a class="button_header" href="#section2">Voir la Carte</a>
+                    <div class="logowild"></div><h1>Wild-Bar</h1>
+                    <p class=" info-panneau"><br/>Le meilleur endroit pour partager de bons moments<br/>avec vos amis</p>
+                    <a class="button_header" href="#section2">Voir la Carte <br/><span class="glyphicon glyphicon-menu-down"></span></a>
+
                 </div>
             </div>
         </div>
@@ -64,7 +65,7 @@
                                             <li><a href="#section1">Nos spécialités</a></li>
                                             <li><a href="#section2">La carte</a></li>
                                             <li><a href="#section3">Jeux</a></li>
-                                            <li><a href="#section4">Infos pratiques</a></li>
+                                            <li><a href="#section4">L'équipe</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -182,6 +183,17 @@
                 </div>
             </div>
 
+            <div class="hidden-md hidden-lg beerTextSmartphone"> <!--Version Smartphone-->
+                <h2>Nos spécialités</h2>
+                <div class="col-xs-12">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Maecenas vitae vehicula ex, eget laoreet eros.Etiam facilisis gravida dolor, sed mollis mi
+                        semper
+                        ac.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -189,153 +201,293 @@
 
     <!--Debut section La carte-->
 
-    <section class="carte" id="section2">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 text-align">
-                    <h2>La carte</h2>
-                </div>
+<section class="carte" id="section2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 text-align">
+                <h2>La carte</h2>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="thumb hidden-xs col-md-5 col-md-offset-1">
-                    <div class="thumbnail text-center">
-                        <img src="img/beers2.jpg" alt="Assortiment de bières">
-                        <div class="caption">
-                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
-                                    data-target="#myModal">
-                                Carte des bières
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!--code for xs thumbnail-->
-                <div class="thumb hidden-sm hidden-md hidden-lg">
-                    <div class="thumbnail">
-                        <img src="img/beers2.jpg" alt="Assortiment de bières">
-                        <div class="caption">
-                            <h4 class="xs-screen-thumbnail text-center">Selection de bières de 3.5 à 11.5 euros</h4>
-                        </div>
-                    </div>
-                </div>
-                <!--fin code xs thumbnail-->
-
-
-                <div class="modal fade beers" id="myModal" tabindex="-1" role="dialog" aria-labelledby="beers">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="thumbnail text-center">
-                                <img src="img/beers2.jpg" alt="Assortiment de bières"
-                                     class="responsive">
-                                <div class="caption">
-                                    <h4 class="screen-modal">Ce qui fait notre spécificité? Notre large selection de
-                                        bières<br/></h4>
-                                    <p> 3 tailles : sm (25cl) 3.5€ / md (50cl) 6.5€ / lg (1L) 11.5€ <br/>
-                                        * 2 blanches <br>
-                                        * 3 blondes <br>
-                                        * 3 ambrées <br>
-                                        * 2 brunes</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class=" hidden-xs col-md-5">
-                    <div class="thumbnail text-center">
-                        <img src="img/cocktails_alcool2.jpg"
-                             alt="Assortiment de cocktails avec alcool">
-                        <div class="caption">
-                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
-                                    data-target="#cocktailA">
-                                Carte des cocktails alcoolisés
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!--code xs thumbnail-->
-                <div class=" hidden-sm hidden-md hidden-lg">
-                    <div class="thumbnail">
-                        <img src="img/cocktails_alcool2.jpg"
-                             alt="Assortiment de cocktails avec alcool">
-                        <div class="caption">
-                            <h4 class="xs-screen-thumbnail text-center">Tous les cocktails sont à 7 euros</h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- end code xs thumbnail-->
-
-                <div class="modal fade beers" id="cocktailA" tabindex="-1" role="dialog"
-                     aria-labelledby="cocktailA">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="thumbnail text-center">
-                                <img src="img/cocktails_alcool2.jpg"
-                                     alt="Assortiment de cocktails"
-                                     class="responsive">
-                                <div class="caption">
-                                    <h4 class="screen-modal">Vous pouvez aussi goûter à nos fameux cocktails</h4>
-                                    <p>Liste des cocktails : 7€ <br>
-                                        * Le PHP : Pinault / Hydromel / Porto <br>
-                                        * Le CSS : Calva / Sucre / Sirop de pomme <br>
-                                        * Le HTML : H / Tequila / Martini / Liqueur <br>
-                                        * Le W3C : Mélange de 3 Whiskies / Cognac <br>
-                                        * Le GIT : GIn Tonic</p>
-                                </div>
-                            </div>
-                        </div>
+        <!-- thumbnail and modal beers -->
+        <div class="row">
+            <div class="thumb hidden-xs col-md-5 col-md-offset-1">
+                <div class="thumbnail text-center">
+                    <img src="img/beers2.jpg" alt="Assortiment de bières">
+                    <div class="caption">
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                data-target="#beers">
+                            Carte des bières
+                        </button>
                     </div>
                 </div>
             </div>
 
-
-            <div class="row">
-                <div class="hidden-xs col-md-5 col-md-offset-1">
-                    <div class="thumbnail text-center">
-                        <img src="img/cocktails2.jpg" alt="Assortiment de cocktails sans alcool">
-                        <div class="caption">
-                            <button type="button" class="btn btn-primary btn-lg hidden-xs" data-toggle="modal"
-                                    data-target="#cocktail">
-                                Carte des cocktails sans alcool
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- col xs thumbnail-->
-                <div class="row">
-                    <div class="hidden-sm hidden-md hidden-lg">
-                        <div class="thumbnail">
-                            <img src="img/cocktails2.jpg" alt="Assortiment de cocktails sans alcool"/>
+            <div class="modal fade beers" id="beers" tabindex="-1" role="dialog" aria-labelledby="beers">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content" data-dismiss="modal">
+                        <div class="thumbnail text-center">
+                            <img src="img/beers2.jpg" alt="Assortiment de bières"
+                                 class="responsive">
                             <div class="caption">
-                                <h4 class="xs-screen-thumbnail text-center">Les cocktails sans alcool à 5 euros</h4>
+                                <h4 class="screen-modalMdH">Ce qui fait notre spécificité? Notre large selection de
+                                    bières<br/></h4>
+                                <p class="screen-modalMdP">en sm (25cl) 3.5€ || md (50cl) 6.5€ || lg (1L) 11.5€
+                                    <br/>
+                                    * 2 blanches <br>
+                                    * 3 blondes <br>
+                                    * 3 ambrées <br>
+                                    * 2 brunes</p>
                             </div>
                         </div>
                     </div>
-                    <!-- end xs thumbnail-->
+                </div>
+            </div>
 
-                    <div class="modal fade beers" id="cocktail" tabindex="-1" role="dialog" aria-labelledby="cocktail">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modale-content">
-                                <div class="thumbnail text-center">
-                                    <img src="img/cocktails2.jpg" alt="Photo de cocktails sans alcool"
-                                         class="responsive">
-                                    <div class="caption">
-                                        <h4 class="screen-modal">Et bien sûr la selection de cocktails sans alcool</h4>
-                                        <p>### Cocktails sans alcool 5€ <br>
-                                            * Le Atom : Abricot / Orange / Ananas <br>
-                                            * Le PHPStorm : Poire / Pomme / Citron <br>
-                                            * Le SublimText : Soda / Banane / Fraise <br>
-                                            * Le Vim : Vanille / Lait / Miel<br>
-                                            * Le Emacs : Eau Gazeuse / Menthe / Citron vert <br></p>
-                                    </div>
-                                </div>
+
+            <!--code for xs thumbnail and modal beers-->
+
+            <div class="thumb hidden-sm hidden-md hidden-lg">
+                <div class="thumbnail text-center">
+                    <img src="img/beers2.jpg" alt="Assortiment de bières">
+                    <div class="caption">
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                data-target="#myModalXs">
+                            Carte des bières
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade beers" id="myModalXs" tabindex="-1" role="dialog" aria-labelledby="beers">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content" data-dismiss="modal">
+                        <div class="thumbnail text-center">
+                            <img src="img/beers2.jpg" alt="Assortiment de bières"
+                                 class="responsive">
+                            <div class="caption">
+                                <h4 class="screen-modalXsH">Venez découvrir nos bières<br/></h4>
+                                <p class="screen-modalXsP">en sm (25cl) 3.5€ || md (50cl) 6.5€ || lg (1L) 11.5€
+                                    <br/>
+                                    * 2 blanches <br>
+                                    * 3 blondes <br>
+                                    * 3 ambrées <br>
+                                    * 2 brunes</p>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <!--end code xs thumbnail and modal-->
+
+            <!-- thumbnail and modal cocktails -->
+            <div class=" hidden-xs col-md-5">
+                <div class="thumbnail text-center">
+                    <img src="img/cocktails_alcool2.jpg"
+                         alt="Assortiment de cocktails avec alcool">
+                    <div class="caption">
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                data-target="#cocktailA">
+                            Carte des cocktails alcoolisés
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade beers" id="cocktailA" tabindex="-1" role="dialog"
+                 aria-labelledby="cocktailA">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content" data-dismiss="modal">
+                        <div class="thumbnail text-center">
+                            <img src="img/cocktails_alcool2.jpg"
+                                 alt="Assortiment de cocktails"
+                                 class="responsive">
+                            <div class="caption">
+                                <h4 class="screen-modalMdH">Vous pouvez aussi goûter à nos fameux cocktails</h4>
+                                <p class="screen-modalMdP">Liste des cocktails : 7€<br>
+                                    * Le PHP : Pinault / Hydromel / Porto <br>
+                                    * Le CSS : Calva / Sucre / Sirop de pomme <br>
+                                    * Le HTML : Hydromel / Tequila / Martini / Liqueur <br>
+                                    * Le W3C : Mélange de 3 Whiskies / Cognac <br>
+                                    * Le GIT : GIn Tonic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <!--code xs thumbnail and modal cocktails-->
+        <div class=" hidden-sm hidden-md hidden-lg">
+            <div class="thumbnail text-center">
+                <img src="img/cocktails_alcool2.jpg"
+                     alt="Assortiment de cocktails avec alcool">
+                <div class="caption">
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                            data-target="#cocktailAXs">
+                        Carte des cocktails alcoolisés
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade beers" id="cocktailAXs" tabindex="-1" role="dialog"
+             aria-labelledby="cocktailA">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content" data-dismiss="modal">
+                    <div class="thumbnail text-center">
+                        <img src="img/cocktails_alcool2.jpg"
+                             alt="Assortiment de cocktails"
+                             class="responsive">
+                        <div class="caption">
+                            <h4 class="screen-modalXsH">Grand choix de cocktails à 7€</h4>
+                            <p class="screen-modalXsP">
+                                * Le PHP : Pinault / Hydromel / Porto <br/>
+                                * Le CSS : Calva / Sucre / Sirop de pomme <br/>
+                                * Le HTML : Hydromel / Tequila / Martini / Liqueur <br/>
+                                * Le W3C : Mélange de 3 Whiskies / Cognac <br/>
+                                * Le GIT : GIn Tonic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end code xs thumbnail and modal cocktails-->
+
+        <!-- thumbnail and modal alcool-free cocktails -->
+        <div class="hidden-xs col-md-5 col-md-offset-1">
+            <div class="thumbnail text-center">
+                <img src="img/cocktails2.jpg" alt="Assortiment de cocktails sans alcool">
+                <div class="caption">
+                    <button type="button" class="btn btn-primary btn-lg hidden-xs" data-toggle="modal"
+                            data-target="#cocktail">
+                        Carte des cocktails sans alcool
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade beers" id="cocktail" tabindex="-1" role="dialog" aria-labelledby="cocktail">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content" data-dismiss="modal">
+                    <div class="thumbnail text-center">
+                        <img src="img/cocktails2.jpg" alt="Photo de cocktails sans alcool"
+                             class="responsive">
+                        <div class="caption">
+                            <h4 class="screen-modalMdH">Et bien sûr la selection de cocktails sans alcool</h4>
+                            <p class="screen-modalMdP">Cocktails sans alcool 5€<br>
+                                * Le Atom : Abricot / Orange / Ananas <br>
+                                * Le PHPStorm : Poire / Pomme / Citron <br>
+                                * Le SublimText : Soda / Banane / Fraise <br>
+                                * Le Vim : Vanille / Lait / Miel<br>
+                                * Le Emacs : Eau Gazeuse / Menthe / Citron vert <br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- col xs thumbnail and modal alcool-free cocktails-->
+        <div class="row sans-alcool">
+            <div class="hidden-sm hidden-md hidden-lg">
+                <div class="thumbnail text-center">
+                    <img src="img/cocktails2.jpg" alt="Assortiment de cocktails sans alcool"/>
+                    <div class="caption">
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                data-target="#cocktailXs">
+                            Carte des cocktails sans alcool
+                        </button>
+                    </div>
+                </div>
+
+            <div class="modal fade beers" id="cocktailXs" tabindex="-1" role="dialog" aria-labelledby="cocktail">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content" data-dismiss="modal">
+                        <div class="thumbnail text-center">
+                            <img src="img/cocktails2.jpg" alt="Photo de cocktails sans alcool"
+                                 class="responsive">
+                            <div class="caption">
+                                <h4 class="screen-modalXsH">Cocktails sans alcool à 5€</h4>
+                                <p class="screen-modalXsP">
+                                    * Le Atom : Abricot / Orange / Ananas <br/>
+                                    * Le PHPStorm : Poire / Pomme / Citron <br/>
+                                    * Le SublimText : Soda / Banane / Fraise <br/>
+                                    * Le Vim : Vanille / Lait / Miel<br/>
+                                    * Le Emacs : Eau Gazeuse / Menthe / Citron vert <br/></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end xs thumbnail and modal alcool-free cocktails-->
+
+            <!-- thumbnail and modal soft -->
+            <div class="hidden-xs col-md-5">
+                <div class="thumbnail text-center">
+                    <img src="img/jus2.jpg" alt="Assortiment de cocktails sans alcool">
+                    <div class="caption">
+                        <button type="button" class="btn btn-primary btn-lg hidden-xs" data-toggle="modal"
+                                data-target="#soft">
+                            Carte des softs
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade beers" id="soft" tabindex="-1" role="dialog" aria-labelledby="cocktail">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content" data-dismiss="modal">
+                        <div class="thumbnail text-center">
+                            <img src="img/jus2.jpg" alt="Photo de cocktails sans alcool"
+                                 class="responsive">
+                            <div class="caption">
+                                <h4 class="screen-modalMdH">Et nos soft</h4>
+                                <p class="screen-modalMdP">Softs : 3€ <br>
+                                    * Soda : Coca, Orangina, Sprite, Limonade <br>
+                                    * Jus de fruits : orange, banane, poire, pomme, raisin, pêche, fraise,
+                                    abricot
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- col xs thumbnail soft-->
+            <div class="hidden-sm hidden-md hidden-lg">
+                <div class="thumbnail text-center">
+                    <img src="img/jus2.jpg" alt="Assortiment de cocktails sans alcool">
+                    <div class="caption">
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                data-target="#softXs">
+                            Carte des softs
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade beers" id="softXs" tabindex="-1" role="dialog" aria-labelledby="cocktail">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content" data-dismiss="modal">
+                        <div class="thumbnail text-center">
+                            <img src="img/jus2.jpg" alt="Photo de cocktails sans alcool"
+                                 class="responsive">
+                            <div class="caption">
+                                <h4 class="screen-modalXsH">Et nos soft</h4>
+                                <p class="screen-modalXsP">Softs : 3€ <br>
+                                    * Soda : Coca, Orangina, Sprite, Limonade <br>
+                                    * Jus de fruits : orange, banane, poire, pomme, raisin, pêche, fraise,
+                                    abricot
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end xs thumbnail soft-->
+        </div>
+    </div>
+</section>
 
                     <div class="hidden-xs col-md-5">
                         <div class="thumbnail text-center">
@@ -349,61 +501,64 @@
                         </div>
                     </div>
 
-                    <!-- col xs thumbnail-->
-                    <div class="hidden-sm hidden-md hidden-lg">
-                        <div class="thumbnail">
-                            <img src="img/jus2.jpg" alt="Assortiment de cocktails sans alcool">
-                            <div class="caption">
-                                <h4 class="xs-screen-thumbnail text-center"> Et les Soft à 3 euros</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end xs thumbnail-->
+<!--Debut section 3 jeux-->
 
-                    <div class="modal fade beers" id="soft" tabindex="-1" role="dialog" aria-labelledby="cocktail">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modale-content">
-                                <div class="thumbnail text-center">
-                                    <img src="img/jus2.jpg" alt="Photo de cocktails sans alcool"
-                                         class="responsive">
-                                    <div class="caption">
-                                        <h4 class="screen-modal">Et nos soft</h4>
-                                        <p>Softs : 3€ <br>
-                                            * Soda : Coca, Orangina, Sprite, Limonade <br>
-                                            * Jus de fruits : orange, banane, poire, pomme, raisin, pêche, fraise,
-                                            abricot
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section class="jeux" id="section3">
+    <h2>Partie jeux</h2>
+    <h3>Coin Billard</h3>
+    <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+            <img src="img/pool2.jpg" alt="Billard" class="img-thumbnail text-center">
+        </div>
+
+        <div class="col-md-5">
+            <p>
+                Hacque adfabilitate confisus cum eadem postridie feceris, ut incognitus haerebis et repentinus,
+                hortatore illo hesterno clientes numerando, qui sis vel unde venias diutius ambigente agnitus vero
+                tandem et adscitus in amicitiam si te salutandi adsiduitati dederis triennio indiscretus.
+            </p>
+        </div>
+    </div>
+
+
+    <h3>Coin Fléchettes</h3>
+    <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+            <p>
+                Ex turba vero imae sortis et paupertinae in tabernis aliqui pernoctant vinariis, non nulli velariis
+                umbraculorum theatralium latent, quae Campanam imitatus lasciviam Catulus in aedilitate sua suspendit
+                omnium primus.
+            </p>
+        </div>
+
+        <div class="col-md-5">
+            <img src="img/darts2.jpg" alt="Fléchettes" class="img-thumbnail text-center">
+        </div>
+
+    </div>
+
+    <h3>Coin Flipper</h3>
+    <div class="row">
+        <div class="hidden-xs col-md-5 col-md-offset-1">
+
+            <img src="img/flipper2.jpg" alt="Flipper" class="img-thumbnail text-center">
         </div>
     </section>
 
+        <div class="col-md-5">
+            <p>
+                Huic Arabia est conserta, ex alio latere Nabataeis contigua; opima varietate conmerciorum castrisque
+                oppleta validis et castellis, quae ad repellendos gentium vicinarum excursus sollicitudo pervigil
+                veterum per oportunos saltus erexit et cautos. haec quoque civitates
+            </p>
+        </div>
 
-    <!--Debut section jeux-->
+    </div>
+</section>
 
-    <section class="jeux" id="section3">
-        <h2>Partie jeux</h2>
-        <div class="row">
-            <div class="hidden-xs col-md-5 col-md-offset-1">
-                <div class="thumbnail text-center">
-                    <img src="img/pool2.jpg" alt="Billard">
-                    <div class="caption">
-                    </div>
-                </div>
-            </div>
+<!-- fin section 3 jeux-->
 
-            <div class="col-md-5">
-                <div class="thumbnail text-center">
-                    <img src="img/darts2.jpg" alt="Fléchettes">
-                    <div class="caption">
-                    </div>
-                </div>
-            </div>
+<!--Debut section Infos-->
 
             <div class="row">
                 <div class="hidden-xs col-md-5 col-md-offset-1">
@@ -416,53 +571,62 @@
 
     <!--Debut section Infos-->
 
-    <section id="section4">
-        <div class="hidden-xs hidden-sm equipe_fullscreen"> <!-- for fullscreen -->
+        <h2>L'équipe</h2>
+        <div class="row equipe_full">
+            <div class="col-md-offset-1 col-md-3">
+                <div class="nico">
+                    <img class="img-responsive image" src="img/NV.jpg" alt="Generic placeholder image">
+                    <div class="middle_nico">
 
-            <h2>L'équipe</h2>
-            <div class="row equipe_full">
-                <div class="col-md-offset-1 col-md-4">
-                    <div class="google-maps">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85602.50027519425!2d1.8878953000000003!3d47.896173000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4e52661ecb4eb%3A0x86bbb8261faea07!2s1+Avenue+du+Champ+de+Mars%2C+45100+Orl%C3%A9ans!5e0!3m2!1sfr!2sfr!4v1505291392507"
-                                frameborder="0" width="600" height="450" style="border:0" allowfullscreen></iframe>
+                        <div class="text_nico"><h4><a href="#" class="effect-underline">Nicolas</a></h4>
+                        </div>
+                        <div class="group-icon">
+                            <img class="rotate" src="img/if_twitter_57890.png" alt="icon1"/>
+                            <img class="rotate" src="img/if_linkedin_57853.png" alt="icon2"/>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-8">
+            </div>
 
-                            <p>Nous sommes Nicolas et Sylvain, anciens développeurs, reconvertis dans le métier de
-                                barmans.
-                                Nous avons créé notre bar en avril 2017 et créons nos propres spécialités de bière.</p>
-                            <img class="img-responsive" id="bar_staff" src="img/MG_0126-994x663.jpg"
-                                 alt="Generic placeholder image"
-                                 width="100%">
+            <div class="col-md-4">
+                <div class="description_equipe">
+                    <p>Nous sommes Nicolas et Sylvain, anciens développeurs, reconvertis dans le métier de
+                        barmans.
+                        Nous avons créé notre bar en avril 2017 et créons nos propres spécialités de
+                        bière.</p>
+                    <!--<img class="img-responsive" id="bar_staff" src="img/MG_0126-994x663.jpg"
+                         alt="Generic placeholder image"
+                         width="100%">-->
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="sylvain">
+                    <img class="img-responsive image" src="img/sylvain-1.jpg"
+                         alt="Generic placeholder image">
+                    <div class="middle_sylvain">
+                        <div class="text_sylvain"><h4><a href="#" class="effect-underline">Sylvain</a></h4>
                         </div>
-
-                        <div class="col-xs-12 col-md-4">
-                            <img class="img-responsive sylvain" src="img/sylvain-1.jpg" alt="Generic placeholder image"
-                                 width="100%">
-                            <br>
-                            <img class="img-responsive nico" src="img/NV.jpg" alt="Generic placeholder image"
-                                 width="100%">
+                        <div class="group-icon">
+                            <img class="rotate" src="img/if_twitter_57890.png" alt="icon1"/>
+                            <img class="rotate" src="img/if_linkedin_57853.png" alt="icon2"/>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="hidden-md hidden-lg equipe_smallscreen"> <!-- for smallscreen -->
-            <h2>Infos Pratiques</h2>
-            <div class="row equipe_small">
-                <div class="col-xs-12">
-                    <div class="google-maps">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85602.50027519425!2d1.8878953000000003!3d47.896173000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4e52661ecb4eb%3A0x86bbb8261faea07!2s1+Avenue+du+Champ+de+Mars%2C+45100+Orl%C3%A9ans!5e0!3m2!1sfr!2sfr!4v1505291392507"
-                                frameborder="0" width="600" height="450" style="border:0" allowfullscreen></iframe>
-                    </div>
+    </div>
+
+    <div class="hidden-md hidden-lg equipe_smallscreen"> <!-- for smallscreen -->
+        <h2>Infos Pratiques</h2>
+        <div class="row equipe_small">
+            <div class="col-xs-12">
+                <div class="google-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85602.50027519425!2d1.8878953000000003!3d47.896173000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4e52661ecb4eb%3A0x86bbb8261faea07!2s1+Avenue+du+Champ+de+Mars%2C+45100+Orl%C3%A9ans!5e0!3m2!1sfr!2sfr!4v1505291392507"
+                            frameborder="0" width="600" height="450" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-</div>
-</div>
+    </div>
 </section>
 </div>
 
@@ -476,57 +640,58 @@
 
 <footer>
     <div class="hidden-xs hidden-sm nav_fullscreen"> <!-- footer for fullscreen -->
-        <div class="container">
-            <ul class="nav-footer">
-                <div class="col-md-4">
-                    <div class="adress_full">
-                        <li>1 rue du Champs de Mars<br/>45000 ORLEANS</li>
+        <div class="nav-footer">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-2">
+                    <div class="google-maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85602.50027519425!2d1.8878953000000003!3d47.896173000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4e52661ecb4eb%3A0x86bbb8261faea07!2s1+Avenue+du+Champ+de+Mars%2C+45100+Orl%C3%A9ans!5e0!3m2!1sfr!2sfr!4v1505291392507"
+                                frameborder="0" width="600" height="450" style="border:0" allowfullscreen></iframe>
                     </div>
-                    <li class="">Tél: 02 38 91 47 87</li>
+
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-offset-1 col-md-3">
                     <div class="days_full">
-                        <li class="opening">Ouvert du mardi au dimanche de 18h à 2h</li>
-                        <li class="closed">Fermé le lundi</li>
+                        <ul>
+                            <li class="opening">Ouvert du mardi au dimanche de 18h à 2h</li>
+                            <li class="closed">Fermé le lundi</li>
+                            <li class="phone">Tél: 02 38 91 47 87</li>
+                            <li class="legal_mentions">Mentions légales</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <li class="social_networks">Retrouvez nous sur les réseaux sociaux</li>
+                <div class="col-md-offset-1 col-md-3">
+                    <p class="social_networks">Retrouvez nous sur les réseaux sociaux</p>
                     <div class="icons">
-                        <li class="facebook_icon"><a href="https://facebook.com" target="_blank"><img
-                                src="img/facebook-icone-9530-64.png"></a></li>
-                        <li class="twitter_icon"><a href="https://twitter.com/?lang=fr" target="_blank"><img
-                                src="img/twitter-icone-5608-64.png"></a></li>
+                        <p class="facebook_icon"><a href="https://facebook.com" target="_blank"><img
+                                src="img/if_facebook_201205.png"></a></p>
+                        <p class="twitter_icon"><a href="https://twitter.com/?lang=fr" target="_blank"><img
+                                src="img/if_twitter_201190.png"></a></p>
                     </div>
                 </div>
-            </ul>
+            </div>
         </div>
     </div>
     <div class="hidden-md hidden-lg nav_smallscreen"> <!-- footer for smallcreen -->
-        <div class="container">
-            <ul class="nav-footer">
+        <div class="nav-footer">
+            <div class="row">
                 <div class="col-xs-12">
-                    <div class="adress_small">
-                        <li>1 rue du Champs de Mars<br/>45000 ORLEANS</li>
-                    </div>
-                    <li class="">Tél: 02 38 91 47 87</li>
-                    <div class="col-xs-12">
-                        <div class="days_small">
-                            <li class="opening">Ouvert du mardi au dimanche de 18h à 2h</li>
-                            <li class="closed">Fermé le lundi</li>
-                        </div>
-                    </div>
-                    <div class="col-xs-12">
-                        <li class="social_networks">Retrouvez nous sur les réseaux sociaux</li>
-                        <div class="icons">
-                            <li class="facebook_icon"><a href="https://facebook.com" target="_blank"><img
-                                    src="img/facebook-icone-9530-64.png"></a></li>
-                            <li class="twitter_icon"><a href="https://twitter.com/?lang=fr" target="_blank"><img
-                                    src="img/twitter-icone-5608-64.png"></a></li>
-                        </div>
+                    <div class="days_small">
+                        <p class="opening">Ouvert du mardi au dimanche de 18h à 2h</p>
+                        <p class="closed">Fermé le lundi</p>
+                        <p class="phone">Tél: 02 38 91 47 87</p>
+                        <p class="legal_mentions">Mentions légales</p>
                     </div>
                 </div>
-            </ul>
+                <div class="col-xs-12">
+                    <p class="social_networks">Retrouvez nous sur les réseaux sociaux</p>
+                    <div class="icons">
+                        <p class="facebook_icon"><a href="https://facebook.com" target="_blank"><img
+                                src="img/if_facebook_201205.png"></a></p>
+                        <p class="twitter_icon"><a href="https://twitter.com/?lang=fr" target="_blank"><img
+                                src="img/if_twitter_201190.png"></a></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
@@ -535,8 +700,6 @@
 
 <!--Script Jquery-->
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
-<script src="js/function.js">
-</script>
+<script src="js/function.js"></script>
 </body>
 </html>
