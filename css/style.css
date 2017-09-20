@@ -48,11 +48,22 @@ section {
 }
 
 /*Panneau md et lg*/
+.logowild {
+    background-image: url("../img/logowildbar.png");
+    z-index: 5;
+    height: 150px;
+    width:150px;
+    text-align: center;
+    background-size: cover;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 
 .panneau-titre {
     border: 10px solid white;
     border-style:double;
-    height: 70vh;
+    height: 100%;
     margin: 5vw 5vw 5vw 5vw;
     background-size: cover;
     box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.4);
@@ -81,16 +92,27 @@ section {
 
 .button_header {
     display: block;
-    margin: auto;
+    margin: auto auto 2vh auto;
     background-color: #555555;
     width:15vw;
     border: none;
-    padding: 15px 15px;
     color: white;
     text-align: center;
     text-decoration: none;
     font-size: calc(100% + 2vh);
     font-family: 'Lobster Two', cursive;
+}
+
+/*Animation fleche*/
+
+
+.glyphicon-menu-down:hover {
+    animation: bounce 0.9s ease;
+}
+
+@keyframes bounce{
+    from {top: 0px;}
+    to   {top: 5px;}
 }
 
 
@@ -104,6 +126,7 @@ h1 {
     font-family: 'Lobster', cursive;
     display: block;
     opacity: 1;
+    margin:0;
 }
 
 .happy-hours {
@@ -143,6 +166,7 @@ h1 {
     font-size:5vh;
     color: white;
     text-align: center;
+    font-family: 'Raleway';
 }
 /* Fin Panneau Titre*/
 
@@ -157,6 +181,22 @@ h1 {
 
 .navbar-brand {
     font-size: calc(100% + 25px);
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+    font-family: 'Lobster Two', cursive;
+}
+
+/*Text section navbar*/
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: darkgray;
+    background-color: transparent;
 }
 
 /*Navbar sticky + effet ombre*/
@@ -222,10 +262,6 @@ a .nav#navbar-main {
     margin: auto;
 }
 
-.beerTextFullscreen { /* Version Fullscreen */
-    text-align: justify;
-    font-size: 1.5em;
-}
 
 .carousel {
     border-radius: 3px;
@@ -363,9 +399,6 @@ h4 {
 }
 /*style section carte et jeux*/
 
-.carte h2 {
-    font-size: 5vw;
-}
 
 .carte h3 {
     font-size: 2vw;
