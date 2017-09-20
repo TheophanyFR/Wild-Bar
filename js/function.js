@@ -17,14 +17,15 @@ $(document).ready(function () {
         }
     });
 
+
+
 // fin partie navbar
 
 // début bouton go back to top
 
-    var amountScrolled = 300;
 
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 50) {
+        if ($(this).scrollTop() > 300) {
             $('#goToTopBtn').fadeIn('slow');
         } else {
             $('#goToTopBtn').fadeOut('slow');
@@ -34,7 +35,6 @@ $(document).ready(function () {
         $('body,html').animate({
             scrollTop: 0
         }, 800);
-        return false;
     });
 
 
