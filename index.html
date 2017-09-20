@@ -16,13 +16,15 @@
     <div class="container-fluid">
         <div class="row">
             <div class="hidden-xs hidden-sm col-md-12 col-lg-12">
-                <div class="bandeau_titre">
-                    <h1 class="panneau-titre" class="col-xs-12 col-sm-12 col-lg-12">Wild<br/>Bar
-                        <p class="happy-hours">Happy Hours</p>
-                        <p class=" info-panneau"><br/>Du Mardi au Dimanche<br/>18h~21h</p>
-                    </h1>
+
+                <div class="bandeau_titre"></div>
+                <div class="panneau-titre" class="hidden-xs col-sm-12 col-lg-12">
+                    <p class="happy-hours">Un Bar de sauvageons éduqués</p>
+                    <div class="logowild"></div><h1>Wild-Bar</h1>
+                    <p class=" info-panneau"><br/>Le meilleur endroit pour partager de bons moments<br/>avec vos amis</p>
+                    <a class="button_header" href="#section2">Voir la Carte <br/><span class="glyphicon glyphicon-menu-down"></span></a>
+
                 </div>
-                <div class="escpace-vide"></div>
             </div>
         </div>
     </div>
@@ -31,16 +33,17 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 hidden-md hidden-lg">
                 <div class="bandeau_titre-sm">
+                    <div class="col-xs-12 hidden-md hidden-lg"></div>
                     <div class="panneau-titre-sm">
-                        <h1 class="col-xs-12 col-sm-12 col-lg-12">Wild<br/>Bar
-                            <p class="happy-hours"><br/>Happy Hours</p>
-                            <p class=" info-panneau"><br/>Du Mardi au Dimanche<br/>18h~21h</p>
-                        </h1>
+                        <p class="happy-hours">Un Bar de sauvageons éduqués</p>
+                        <h1>Wild-Bar</h1>
+                        <p class=" info-panneau"><br/>Le meilleur endroit pour partager de bons moments<br/>avec vos amis</p>
+
                     </div>
+                </div>
                 </div>
                 <div class="escpace-vide"></div>
             </div>
-        </div>
     </div>
 
     <!--Barre de navigation en taille lg-->
@@ -61,7 +64,7 @@
                                             <li><a href="#section1">Nos spécialités</a></li>
                                             <li><a href="#section2">La carte</a></li>
                                             <li><a href="#section3">Jeux</a></li>
-                                            <li><a href="#section4">Infos pratiques</a></li>
+                                            <li><a href="#section4">L'équipe</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -93,7 +96,6 @@
                             <!-- Menu burger -->
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav navbar-right">
-
                                     <li class="dropdown"></li>
                                     <li class="active"><a href="#">Accueil</a></li>
                                     <li><a href="#section2">La carte</a></li>
@@ -110,28 +112,30 @@
 </header>
 
 <!--Debut section Nos Spécialités-->
-
+<div class="background-blanc">
 <section id="section1">
     <section>
         <div class="row">
 
             <div class="hidden-xs hidden-sm beerTextFullscreen"> <!--Version Fullscreen-->
                 <h2>Nos spécialités</h2>
-                <div class="col-md-offset-1 col-md-5">
+                <div class="col-md-offset-1 col-md-3">
+                    <h2 class="sous_titre">Bienvenue</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Maecenas vitae vehicula ex, eget laoreet eros.Etiam facilisis gravida dolor, sed mollis mi
                         semper
                         ac.
-                        In hac habitasse platea dictumst. Fusce dictum mattis augue, nec fermentum risus. Maecenas vel
-                        augue
-                        iaculis, varius lectus ut, mollis dolor.
+                        In hac habitasse platea dictumst.
                     </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/beerdess1.png">
                 </div>
 
                 <!-- Debut Carousel -->
 
-                <div class="col-md-5">
+                <div class="col-md-3">
                     <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel">
 
                         <!-- Wrapper for slides -->
@@ -179,6 +183,17 @@
                 </div>
             </div>
 
+            <div class="hidden-md hidden-lg beerTextSmartphone"> <!--Version Smartphone-->
+                <h2>Nos spécialités</h2>
+                <div class="col-xs-12">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Maecenas vitae vehicula ex, eget laoreet eros.Etiam facilisis gravida dolor, sed mollis mi
+                        semper
+                        ac.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 </section>
@@ -195,41 +210,31 @@
             </div>
         </div>
 
+        <!-- thumbnail and modal beers -->
         <div class="row">
             <div class="thumb hidden-xs col-md-5 col-md-offset-1">
                 <div class="thumbnail text-center">
                     <img src="img/beers2.jpg" alt="Assortiment de bières">
                     <div class="caption">
                         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
-                                data-target="#myModal">
+                                data-target="#beers">
                             Carte des bières
                         </button>
                     </div>
                 </div>
             </div>
 
-            <!--code for xs thumbnail-->
-            <div class="thumb hidden-sm hidden-md hidden-lg">
-                <div class="thumbnail">
-                    <img src="img/beers2.jpg" alt="Assortiment de bières">
-                    <div class="caption">
-                        <h4 class="xs-screen-thumbnail text-center">Selection de bières de 3.5 à 11.5 euros</h4>
-                    </div>
-                </div>
-            </div>
-            <!--fin code xs thumbnail-->
-
-
-            <div class="modal fade beers" id="myModal" tabindex="-1" role="dialog" aria-labelledby="beers">
+            <div class="modal fade beers" id="beers" tabindex="-1" role="dialog" aria-labelledby="beers">
                 <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
+                    <div class="modal-content" data-dismiss="modal">
                         <div class="thumbnail text-center">
                             <img src="img/beers2.jpg" alt="Assortiment de bières"
                                  class="responsive">
                             <div class="caption">
-                                <h4 class="screen-modal">Ce qui fait notre spécificité? Notre large selection de
+                                <h4 class="screen-modalMdH">Ce qui fait notre spécificité? Notre large selection de
                                     bières<br/></h4>
-                                <p> 3 tailles : sm (25cl) 3.5€ / md (50cl) 6.5€ / lg (1L) 11.5€ <br/>
+                                <p class="screen-modalMdP">en sm (25cl) 3.5€ || md (50cl) 6.5€ || lg (1L) 11.5€
+                                    <br/>
                                     * 2 blanches <br>
                                     * 3 blondes <br>
                                     * 3 ambrées <br>
@@ -241,6 +246,42 @@
             </div>
 
 
+            <!--code for xs thumbnail and modal beers-->
+
+            <div class="thumb hidden-sm hidden-md hidden-lg">
+                <div class="thumbnail text-center">
+                    <img src="img/beers2.jpg" alt="Assortiment de bières">
+                    <div class="caption">
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                data-target="#myModalXs">
+                            Carte des bières
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade beers" id="myModalXs" tabindex="-1" role="dialog" aria-labelledby="beers">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content" data-dismiss="modal">
+                        <div class="thumbnail text-center">
+                            <img src="img/beers2.jpg" alt="Assortiment de bières"
+                                 class="responsive">
+                            <div class="caption">
+                                <h4 class="screen-modalXsH">Venez découvrir nos bières<br/></h4>
+                                <p class="screen-modalXsP">en sm (25cl) 3.5€ || md (50cl) 6.5€ || lg (1L) 11.5€
+                                    <br/>
+                                    * 2 blanches <br>
+                                    * 3 blondes <br>
+                                    * 3 ambrées <br>
+                                    * 2 brunes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end code xs thumbnail and modal-->
+
+            <!-- thumbnail and modal cocktails -->
             <div class=" hidden-xs col-md-5">
                 <div class="thumbnail text-center">
                     <img src="img/cocktails_alcool2.jpg"
@@ -254,32 +295,20 @@
                 </div>
             </div>
 
-            <!--code xs thumbnail-->
-            <div class=" hidden-sm hidden-md hidden-lg">
-                <div class="thumbnail">
-                    <img src="img/cocktails_alcool2.jpg"
-                         alt="Assortiment de cocktails avec alcool">
-                    <div class="caption">
-                        <h4 class="xs-screen-thumbnail text-center">Tous les cocktails sont à 7 euros</h4>
-                    </div>
-                </div>
-            </div>
-            <!-- end code xs thumbnail-->
-
             <div class="modal fade beers" id="cocktailA" tabindex="-1" role="dialog"
                  aria-labelledby="cocktailA">
                 <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
+                    <div class="modal-content" data-dismiss="modal">
                         <div class="thumbnail text-center">
                             <img src="img/cocktails_alcool2.jpg"
                                  alt="Assortiment de cocktails"
                                  class="responsive">
                             <div class="caption">
-                                <h4 class="screen-modal">Vous pouvez aussi goûter à nos fameux cocktails</h4>
-                                <p>Liste des cocktails : 7€ <br>
+                                <h4 class="screen-modalMdH">Vous pouvez aussi goûter à nos fameux cocktails</h4>
+                                <p class="screen-modalMdP">Liste des cocktails : 7€<br>
                                     * Le PHP : Pinault / Hydromel / Porto <br>
                                     * Le CSS : Calva / Sucre / Sirop de pomme <br>
-                                    * Le HTML : H / Tequila / Martini / Liqueur <br>
+                                    * Le HTML : Hydromel / Tequila / Martini / Liqueur <br>
                                     * Le W3C : Mélange de 3 Whiskies / Cognac <br>
                                     * Le GIT : GIn Tonic</p>
                             </div>
@@ -289,130 +318,237 @@
             </div>
         </div>
 
+        <!--code xs thumbnail and modal cocktails-->
+        <div class=" hidden-sm hidden-md hidden-lg">
+            <div class="thumbnail text-center">
+                <img src="img/cocktails_alcool2.jpg"
+                     alt="Assortiment de cocktails avec alcool">
+                <div class="caption">
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                            data-target="#cocktailAXs">
+                        Carte des cocktails alcoolisés
+                    </button>
+                </div>
+            </div>
+        </div>
 
-        <div class="row">
-            <div class="hidden-xs col-md-5 col-md-offset-1">
+        <div class="modal fade beers" id="cocktailAXs" tabindex="-1" role="dialog"
+             aria-labelledby="cocktailA">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content" data-dismiss="modal">
+                    <div class="thumbnail text-center">
+                        <img src="img/cocktails_alcool2.jpg"
+                             alt="Assortiment de cocktails"
+                             class="responsive">
+                        <div class="caption">
+                            <h4 class="screen-modalXsH">Grand choix de cocktails à 7€</h4>
+                            <p class="screen-modalXsP">
+                                * Le PHP : Pinault / Hydromel / Porto <br/>
+                                * Le CSS : Calva / Sucre / Sirop de pomme <br/>
+                                * Le HTML : Hydromel / Tequila / Martini / Liqueur <br/>
+                                * Le W3C : Mélange de 3 Whiskies / Cognac <br/>
+                                * Le GIT : GIn Tonic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end code xs thumbnail and modal cocktails-->
+
+        <!-- thumbnail and modal alcool-free cocktails -->
+        <div class="hidden-xs col-md-5 col-md-offset-1">
+            <div class="thumbnail text-center">
+                <img src="img/cocktails2.jpg" alt="Assortiment de cocktails sans alcool">
+                <div class="caption">
+                    <button type="button" class="btn btn-primary btn-lg hidden-xs" data-toggle="modal"
+                            data-target="#cocktail">
+                        Carte des cocktails sans alcool
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade beers" id="cocktail" tabindex="-1" role="dialog" aria-labelledby="cocktail">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content" data-dismiss="modal">
+                    <div class="thumbnail text-center">
+                        <img src="img/cocktails2.jpg" alt="Photo de cocktails sans alcool"
+                             class="responsive">
+                        <div class="caption">
+                            <h4 class="screen-modalMdH">Et bien sûr la selection de cocktails sans alcool</h4>
+                            <p class="screen-modalMdP">Cocktails sans alcool 5€<br>
+                                * Le Atom : Abricot / Orange / Ananas <br>
+                                * Le PHPStorm : Poire / Pomme / Citron <br>
+                                * Le SublimText : Soda / Banane / Fraise <br>
+                                * Le Vim : Vanille / Lait / Miel<br>
+                                * Le Emacs : Eau Gazeuse / Menthe / Citron vert <br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- col xs thumbnail and modal alcool-free cocktails-->
+        <div class="row sans-alcool">
+            <div class="hidden-sm hidden-md hidden-lg">
                 <div class="thumbnail text-center">
-                    <img src="img/cocktails2.jpg" alt="Assortiment de cocktails sans alcool">
+                    <img src="img/cocktails2.jpg" alt="Assortiment de cocktails sans alcool"/>
                     <div class="caption">
-                        <button type="button" class="btn btn-primary btn-lg hidden-xs" data-toggle="modal"
-                                data-target="#cocktail">
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                data-target="#cocktailXs">
                             Carte des cocktails sans alcool
                         </button>
                     </div>
                 </div>
             </div>
 
-            <!-- col xs thumbnail-->
-            <div class="row">
-                <div class="hidden-sm hidden-md hidden-lg">
-                    <div class="thumbnail">
-                        <img src="img/cocktails2.jpg" alt="Assortiment de cocktails sans alcool"/>
-                        <div class="caption">
-                            <h4 class="xs-screen-thumbnail text-center">Les cocktails sans alcool à 5 euros</h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- end xs thumbnail-->
-
-                <div class="modal fade beers" id="cocktail" tabindex="-1" role="dialog" aria-labelledby="cocktail">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modale-content">
-                            <div class="thumbnail text-center">
-                                <img src="img/cocktails2.jpg" alt="Photo de cocktails sans alcool"
-                                     class="responsive">
-                                <div class="caption">
-                                    <h4 class="screen-modal">Et bien sûr la selection de cocktails sans alcool</h4>
-                                    <p>### Cocktails sans alcool 5€ <br>
-                                        * Le Atom : Abricot / Orange / Ananas <br>
-                                        * Le PHPStorm : Poire / Pomme / Citron <br>
-                                        * Le SublimText : Soda / Banane / Fraise <br>
-                                        * Le Vim : Vanille / Lait / Miel<br>
-                                        * Le Emacs : Eau Gazeuse / Menthe / Citron vert <br></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hidden-xs col-md-5">
-                    <div class="thumbnail text-center">
-                        <img src="img/jus2.jpg" alt="Assortiment de cocktails sans alcool">
-                        <div class="caption">
-                            <button type="button" class="btn btn-primary btn-lg hidden-xs" data-toggle="modal"
-                                    data-target="#soft">
-                                Carte des softs
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- col xs thumbnail-->
-                <div class="hidden-sm hidden-md hidden-lg">
-                    <div class="thumbnail">
-                        <img src="img/jus2.jpg" alt="Assortiment de cocktails sans alcool">
-                        <div class="caption">
-                            <h4 class="xs-screen-thumbnail text-center"> Et les Soft à 3 euros</h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- end xs thumbnail-->
-
-                <div class="modal fade beers" id="soft" tabindex="-1" role="dialog" aria-labelledby="cocktail">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modale-content">
-                            <div class="thumbnail text-center">
-                                <img src="img/jus2.jpg" alt="Photo de cocktails sans alcool"
-                                     class="responsive">
-                                <div class="caption">
-                                    <h4 class="screen-modal">Et nos soft</h4>
-                                    <p>Softs : 3€ <br>
-                                        * Soda : Coca, Orangina, Sprite, Limonade <br>
-                                        * Jus de fruits : orange, banane, poire, pomme, raisin, pêche, fraise,
-                                        abricot
-                                    </p>
-                                </div>
+            <div class="modal fade beers" id="cocktailXs" tabindex="-1" role="dialog" aria-labelledby="cocktail">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content" data-dismiss="modal">
+                        <div class="thumbnail text-center">
+                            <img src="img/cocktails2.jpg" alt="Photo de cocktails sans alcool"
+                                 class="responsive">
+                            <div class="caption">
+                                <h4 class="screen-modalXsH">Cocktails sans alcool à 5€</h4>
+                                <p class="screen-modalXsP">
+                                    * Le Atom : Abricot / Orange / Ananas <br/>
+                                    * Le PHPStorm : Poire / Pomme / Citron <br/>
+                                    * Le SublimText : Soda / Banane / Fraise <br/>
+                                    * Le Vim : Vanille / Lait / Miel<br/>
+                                    * Le Emacs : Eau Gazeuse / Menthe / Citron vert <br/></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- end xs thumbnail and modal alcool-free cocktails-->
+
+            <!-- thumbnail and modal soft -->
+            <div class="hidden-xs col-md-5">
+                <div class="thumbnail text-center">
+                    <img src="img/jus2.jpg" alt="Assortiment de cocktails sans alcool">
+                    <div class="caption">
+                        <button type="button" class="btn btn-primary btn-lg hidden-xs" data-toggle="modal"
+                                data-target="#soft">
+                            Carte des softs
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade beers" id="soft" tabindex="-1" role="dialog" aria-labelledby="cocktail">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content" data-dismiss="modal">
+                        <div class="thumbnail text-center">
+                            <img src="img/jus2.jpg" alt="Photo de cocktails sans alcool"
+                                 class="responsive">
+                            <div class="caption">
+                                <h4 class="screen-modalMdH">Et nos soft</h4>
+                                <p class="screen-modalMdP">Softs : 3€ <br>
+                                    * Soda : Coca, Orangina, Sprite, Limonade <br>
+                                    * Jus de fruits : orange, banane, poire, pomme, raisin, pêche, fraise,
+                                    abricot
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- col xs thumbnail soft-->
+            <div class="hidden-sm hidden-md hidden-lg">
+                <div class="thumbnail text-center">
+                    <img src="img/jus2.jpg" alt="Assortiment de cocktails sans alcool">
+                    <div class="caption">
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                data-target="#softXs">
+                            Carte des softs
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade beers" id="softXs" tabindex="-1" role="dialog" aria-labelledby="cocktail">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content" data-dismiss="modal">
+                        <div class="thumbnail text-center">
+                            <img src="img/jus2.jpg" alt="Photo de cocktails sans alcool"
+                                 class="responsive">
+                            <div class="caption">
+                                <h4 class="screen-modalXsH">Et nos soft</h4>
+                                <p class="screen-modalXsP">Softs : 3€ <br>
+                                    * Soda : Coca, Orangina, Sprite, Limonade <br>
+                                    * Jus de fruits : orange, banane, poire, pomme, raisin, pêche, fraise,
+                                    abricot
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end xs thumbnail soft-->
         </div>
     </div>
 </section>
 
 
-<!--Debut section jeux-->
+<!--Debut section 3 jeux-->
 
 <section class="jeux" id="section3">
     <h2>Partie jeux</h2>
+    <h3>Coin Billard</h3>
     <div class="row">
-        <div class="hidden-xs col-md-5 col-md-offset-1">
-            <div class="thumbnail text-center">
-                <img src="img/pool2.jpg" alt="Billard">
-                <div class="caption">
-                </div>
-            </div>
+        <div class="col-md-5 col-md-offset-1">
+            <img src="img/pool2.jpg" alt="Billard" class="img-thumbnail text-center">
         </div>
 
         <div class="col-md-5">
-            <div class="thumbnail text-center">
-                <img src="img/darts2.jpg" alt="Fléchettes">
-                <div class="caption">
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="hidden-xs col-md-5 col-md-offset-1">
-                <div class="thumbnail text-center">
-                    <img src="img/flipper2.jpg" alt="Flipper">
-                    <div class="caption"></div>
-                </div>
-            </div>
+            <p>
+                Hacque adfabilitate confisus cum eadem postridie feceris, ut incognitus haerebis et repentinus,
+                hortatore illo hesterno clientes numerando, qui sis vel unde venias diutius ambigente agnitus vero
+                tandem et adscitus in amicitiam si te salutandi adsiduitati dederis triennio indiscretus.
+            </p>
         </div>
     </div>
+
+
+    <h3>Coin Fléchettes</h3>
+    <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+            <p>
+                Ex turba vero imae sortis et paupertinae in tabernis aliqui pernoctant vinariis, non nulli velariis
+                umbraculorum theatralium latent, quae Campanam imitatus lasciviam Catulus in aedilitate sua suspendit
+                omnium primus.
+            </p>
+        </div>
+
+        <div class="col-md-5">
+            <img src="img/darts2.jpg" alt="Fléchettes" class="img-thumbnail text-center">
+        </div>
+
+    </div>
+
+    <h3>Coin Flipper</h3>
+    <div class="row">
+        <div class="hidden-xs col-md-5 col-md-offset-1">
+
+            <img src="img/flipper2.jpg" alt="Flipper" class="img-thumbnail text-center">
+        </div>
+
+        <div class="col-md-5">
+            <p>
+                Huic Arabia est conserta, ex alio latere Nabataeis contigua; opima varietate conmerciorum castrisque
+                oppleta validis et castellis, quae ad repellendos gentium vicinarum excursus sollicitudo pervigil
+                veterum per oportunos saltus erexit et cautos. haec quoque civitates
+            </p>
+        </div>
+
+    </div>
 </section>
+
+<!-- fin section 3 jeux-->
 
 <!--Debut section Infos-->
 
@@ -477,7 +613,7 @@
         </div>
     </div>
 </section>
-
+</div>
 <!--Debut footer-->
 
 <footer>
