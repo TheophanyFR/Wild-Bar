@@ -307,6 +307,8 @@ h4 {
     font-family: 'Lobster Two', cursive;
 }
 
+
+
 .caption {
     font-family: 'Lobster Two', cursive;
 }
@@ -329,19 +331,21 @@ h4 {
     font-size: 2vw;
 }
 
-.carte p {
-    font-size: 1vw  ;
+.screen-modalMdP {
+    font-size: 2vw  ;
 }
 
-.screen-modal {
-    font-size: 2vw;
+.screen-modalMdH {
+    font-size: 3vw;
 }
 
-.sans-alcool {
-    margin: 0px;
-    padding: 0px;
-    background-color: aqua;
-    width: 90%;
+.screen-modalXsH {
+    font-size: 8vw;
+}
+
+.screen-modalXsP{
+font-size: 6vw;
+
 }
 
 .ijeux {
@@ -353,14 +357,18 @@ h4 {
     font-family: 'Raleway', sans-serif;
 }
 
+.jeux p {
+    font-size: 2vw;
+    font-family: 'Raleway', sans-serif;
 
+}
 .jeux img {
     width: 100%;
 
 }
 
 .xs-screen-thumbnail {
-    font-size: x-large;
+    font-size: 5vw;
 
 }
 
@@ -368,6 +376,10 @@ h4 {
     font-family: 'Raleway', sans-serif;
 }
 
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
 
 
 /* fin style section carte et jeux*/
