@@ -17,12 +17,17 @@ $(document).ready(function () {
         }
     });
 
-
+    // Code pour animer les transitions des ancres
+    $("a[href^=#]").click(function (e) {
+        e.preventDefault();
+        var dest = $(this).attr('href');
+        console.log(dest);
+        $('html,body').animate({scrollTop: $(dest).offset().top}, 'slow');
+    });
 
 // fin partie navbar
 
 // début bouton go back to top
-
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
@@ -34,10 +39,8 @@ $(document).ready(function () {
     $('#goToTopBtn').click(function () {
         $('body,html').animate({
             scrollTop: 0
-        }, 800);
+        }, 'slow');
     });
-
-
 
 // fin bouton go back to top
 });

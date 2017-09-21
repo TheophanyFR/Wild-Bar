@@ -12,13 +12,13 @@
 </head>
 <body data-spy="scroll" data-target=".navspy" data-offset="20">
 
-<header>
+<header id="header">
     <div class="container-fluid">
         <div class="row">
             <div class="hidden-xs hidden-sm col-md-12 col-lg-12">
 
                 <div class="bandeau_titre"></div>
-                <div class="panneau-titre" class="hidden-xs col-sm-12 col-lg-12">
+                <div class="hidden-xs col-sm-12 col-lg-12 panneau-titre">
                     <p class="happy-hours">Un Bar de sauvageons éduqués</p>
                     <div class="logowild"></div>
                     <h1>Wild-Bar</h1>
@@ -26,7 +26,6 @@
                     </p>
                     <a class="button_header" href="#section2">Voir la Carte <br/><span
                             class="glyphicon glyphicon-menu-down"></span></a>
-
                 </div>
             </div>
         </div>
@@ -60,11 +59,11 @@
                             <nav id="navbar-main" class="navbar navbar-inverse">
                                 <div class="container">
                                     <div class="navbar-header">
-                                        <a class="navbar-brand" href="#">Wild-Bar</a>
+                                        <a class="navbar-brand" href="#header">Wild-Bar</a>
                                     </div>
                                     <div id="navbar" class="collapse navbar-collapse">
                                         <ul class="nav navbar-nav">
-                                            <li class="active"><a href="#">Accueil</a></li>
+                                            <li class="active"><a href="#header">Accueil</a></li>
                                             <li><a href="#section1">Nos spécialités</a></li>
                                             <li><a href="#section2">La carte</a></li>
                                             <li><a href="#section3">Jeux</a></li>
@@ -596,6 +595,7 @@
                 </div>
             </div>
         </div>
+    </section>
 </div>
 
 <div class="hidden-md hidden-lg equipe_smallscreen"> <!-- for smallscreen -->
@@ -609,7 +609,7 @@
         </div>
     </div>
 </div>
-</section>
+
 </div>
 
 <!--Début bouton go back to top-->
@@ -683,6 +683,7 @@
 <!--Script Jquery-->
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src="js/jquery.scrollify.min.js"></script>
 <script src="js/function.js"></script>
 </body>
 </html>

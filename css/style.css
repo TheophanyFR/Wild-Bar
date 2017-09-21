@@ -61,10 +61,21 @@ section {
     border: 10px solid white;
     border-style:double;
     height: 100%;
-    margin: 5vw 5vw 5vw 5vw;
+    margin: 5vw 0 5vw 0;
     background-size: cover;
     box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.4);
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+.col-lg-12 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.panneau-titre a {
+    text-decoration: none;
+    color:whitesmoke;
+    outline: none;
 }
 
 /*Panneau + Titre taille xs et sm*/
@@ -98,6 +109,7 @@ section {
     text-decoration: none;
     font-size: calc(100% + 2vh);
     font-family: 'Lobster Two', cursive;
+    text-decoration: none;
 }
 
 /*Animation fleche*/
@@ -202,6 +214,10 @@ h1 {
 
 .nav-sticky {
     box-shadow: 0 -20px 20px 10px rgba(0, 0, 0, 0.4);
+}
+
+.nav-sticky a {
+    outline: none;
 }
 
 a .nav#navbar-main {
