@@ -18,7 +18,7 @@ $(document).ready(function () {
     });
 
     // Code pour animer les transitions des ancres
-    $("a[href^=#]").click(function (e) {
+    $("a[href^=#s]").click(function (e) {
         e.preventDefault();
         var dest = $(this).attr('href');
         console.log(dest);
@@ -26,6 +26,15 @@ $(document).ready(function () {
     });
 
 // fin partie navbar
+
+// début partie menu burger
+    //navbar closes when clicking outside
+    $(document).click(function(e) {
+        if (!$(e.target).is('a')) {
+            $('.navbar-collapse').collapse('hide');
+        }
+    });
+// fin partie menu burger
 
 // début bouton go back to top
 
