@@ -9,6 +9,29 @@ body {
     margin-left: 0;
 }
 
+.col-lg-12 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.col-xs-12 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#section1 {
+    padding-bottom: 10vh;
+}
+
+
+#section3 {
+    padding-bottom: 10vh;
+}
+
+#section4 {
+    padding-bottom: 10vh;
+}
+
 /*Background color*/
 
 .background-blanc {
@@ -74,10 +97,6 @@ section {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.col-lg-12 {
-    padding-right: 0;
-    padding-left: 0;
-}
 
 .panneau-titre a {
     text-decoration: none;
@@ -165,6 +184,7 @@ h1 {
     text-align: center;
     font-style: italic;
     opacity: 1;
+    padding-top: 2vh;
 }
 
 /* Fin Panneau Titre taille md et lg*/
@@ -172,7 +192,7 @@ h1 {
 /*Debut Panneau Titre taille xs et sm*/
 
 /*Panneau + Titre taille xs et sm*/
-120
+
 .bandeau_titre-sm {
     background-image: url("../img/bar3.jpg");
     background-size: cover;
@@ -286,7 +306,7 @@ a .nav#navbar-main {
 
 .happy-hours {
     background-image: url("../img/Free-Chalkboard-Backgrounds.jpg");
-    height:50vh;
+    height:100%;
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
@@ -302,7 +322,7 @@ a .nav#navbar-main {
 .logohappyhours {
     background-image: url("../img/logohappyhours.png");
     background-repeat: no-repeat;
-    height: 40vh;
+    height:100%;
     width:40vh;
     margin-left: auto;
     margin-right: auto;
@@ -323,6 +343,7 @@ a .nav#navbar-main {
 .happy-hours-sm {
     background-image: url("../img/Free-Chalkboard-Backgrounds.jpg");
     padding: 5vh 0 5vh 0;
+    height:100%;
 }
 
 .infohappyhours-sm {
@@ -359,9 +380,7 @@ a .nav#navbar-main {
 
 /*  SECTION SPECIALITES */
 
-#section1, #section1 img {
-    padding-bottom: 20px;
-}
+
 
 /*Debut carousel*/
 
@@ -385,7 +404,7 @@ a .nav#navbar-main {
 }
 
 .carousel-caption {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(34, 34, 34, 0.8);
     font-size: 3em;
     padding: 25px;
     border: 5px solid white;
@@ -479,7 +498,7 @@ a.effect-underline:hover:after {
     border-radius: 3px;
 }
 
-#section4 p {
+p {
     font-size: 3vh;
     text-align: justify;
     padding-top: 10vh;
@@ -515,7 +534,6 @@ a.effect-underline:hover:after {
     height: 100%;
     transition: .5s ease;
     backface-visibility: hidden;
-    border: double 4px grey;
 }
 
 .middle_nico, .middle_sylvain {
@@ -633,10 +651,10 @@ footer {
 
 h2 {
     font-size: calc(100% + 3em);
-    background-color: whitesmoke;
+    background-color: #222222;
     text-align: center;
     width: 50vh;
-    color: black;
+    color: whitesmoke;
     font-family: 'Lobster Two', cursive;
     margin-top: 15vh;
     margin-left: auto;
@@ -644,8 +662,9 @@ h2 {
     margin-bottom: 1.5em;
     /* border: solid 2px;
     border-style: hidden hidden solid solid;*/
-    border: 6px double #333333;
+    border: 6px double whitesmoke;
     padding: 1.5vh 0 1.5vh 0;
+    border-radius: 3px;
 }
 
 h3 {
