@@ -7,12 +7,10 @@ body {
 /*Background color*/
 
 .background-blanc {
-    background-color: whitesmoke;
-}
+    background-image: url(../img/brickwall.png);}
 
 section {
-    background-color: whitesmoke;
-}
+    background-image: url(../img/brickwall.png);}
 
 /*Bandeau titre*/
 
@@ -22,10 +20,15 @@ section {
 
 /*Bandeau Image */
 
-.bandeau_titre {
+#header {
+    /*background du header déplacé ici pour qu'il couvre toute la largeur sans que la border du bandeau
+        titre soit forcée de le faire aussi*/
     background-image: url("../img/bar3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.bandeau_titre {
     opacity: 0.8;
     width: 100%;
     z-index: -1;
@@ -37,7 +40,6 @@ section {
 .bandeau_titre-sm {
     background-image: url("../img/bar3.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
     opacity: 0.8;
     width: 100%;
     height: 100%;
@@ -58,8 +60,7 @@ section {
 
 
 .panneau-titre {
-    border: 10px solid white;
-    border-style:double;
+    border: 10px double white;
     height: 100%;
     margin: 5vw 0 5vw 0;
     background-size: cover;
@@ -82,8 +83,7 @@ section {
 
 .panneau-titre-sm {
 
-    border: 5px solid white;
-    border-style: double;
+    border: 5px double white;
     height: 85vh;
     width: 80vw;
     margin-right: auto;
@@ -101,8 +101,8 @@ section {
 .button_header {
     display: block;
     margin: auto auto 2vh auto;
-    background-color: #555555;
-    width: 15vw;
+    background-color: black;
+    width: 12vw;
     border: none;
     color: white;
     text-align: center;
@@ -110,6 +110,7 @@ section {
     font-size: calc(100% + 2vh);
     font-family: 'Lobster Two', cursive;
     text-decoration: none;
+    border-radius: 5px;
 }
 
 /*Animation fleche*/
@@ -120,7 +121,7 @@ section {
 }
 
 @keyframes bounce{
-    from {top: 0px;}
+    from {top: 0;}
     to   {top: 5px;}
 }
 
@@ -176,7 +177,7 @@ h1 {
     font-size: 5vh;
     color: white;
     text-align: center;
-    font-family: 'Raleway';
+    font-family: 'Raleway', Sans-Serif;
 }
 
 /* Fin Panneau Titre*/
@@ -251,12 +252,6 @@ a .nav#navbar-main {
 
 /*  SECTION SPECIALITES */
 
-/*Image*/
-
-.imageSpécialités {
-    background-image: url("../img/beer.jpg");
-}
-
 /*Debut carousel*/
 
 .sous_titre {
@@ -293,9 +288,12 @@ a .nav#navbar-main {
 
 /*Fin carousel*/
 
-/* début section l'équipe */
+/*--------------------------------------------------------------------------------------*/
+
+/*  SECTION EQUIPE */
 
 /*debut soulignement*/
+
 #section4 h4 a {
     color: black;
     font-family: 'Lobster Two', cursive;
@@ -337,8 +335,6 @@ a.effect-underline:hover:after {
 
 }
 
-
-
 .equipe_full {
     padding-bottom: 5em;
 
@@ -363,6 +359,8 @@ a.effect-underline:hover:after {
     text-align: justify;
 
 }
+
+/* Effets sur images */
 
 .nico, .sylvain{
     position: relative;
@@ -399,6 +397,7 @@ a.effect-underline:hover:after {
     height: 100%;
     transition: .5s ease;
     backface-visibility: hidden;
+    border: double 4px grey;
 }
 
 .middle_nico, .middle_sylvain {
@@ -412,6 +411,7 @@ a.effect-underline:hover:after {
     -ms-transform: translate(-50%, -50%)
 }
 
+/* Fin effets sur images*/
 
 /*icone_rotate*/
 @keyframes myrotate {
@@ -484,6 +484,7 @@ footer {
 
 }
 /*Fin partie footer*/
+
 /* fin partie l'équipe */
 
 /*Début bouton go back to top*/
@@ -512,16 +513,17 @@ h2 {
     font-size: calc(100% + 3em);
     background-color: whitesmoke;
     text-align: center;
-    width: 40vw;
+    width: 50vh;
     color: black;
     font-family: 'Lobster Two', cursive;
     margin-top: 15vh;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1.5em;
-    border: solid 2px;
-    border-style: hidden hidden double double;
-    padding-bottom: 5vh;
+    /* border: solid 2px;
+    border-style: hidden hidden solid solid;*/
+    border: 6px double #333333;
+    padding: 1.5vh 0 1.5vh 0;
 }
 
 h3 {
@@ -554,14 +556,17 @@ h4 {
 }
 
 /*style section carte et jeux*/
-
+#section2 {
+    background-color: lightgray;
+    background-image: url("../img/Free-Chalkboard-Backgrounds.jpg");
+}
 
 .carte h3 {
     font-size: 2vw;
 }
 
 .screen-modalMdP {
-    font-size: 2vw  ;
+    font-size: 2vw;
 }
 
 .screen-modalMdH {
@@ -572,44 +577,126 @@ h4 {
     font-size: 8vw;
 }
 
-.screen-modalXsP{
-font-size: 6vw;
-
+.screen-modalXsP {
+    font-size: 6vw;
 }
 
 .ijeux {
     border-radius: 3px;
 }
 
-.jeux h3 {
-    height: 5vw;
-    font-family: 'Raleway', sans-serif;
-}
-
 .jeux p {
     font-size: 2vw;
     font-family: 'Raleway', sans-serif;
-
 }
-.jeux img {
-    width: 100%;
 
+.carte .btn-default {
+    background-color: black;
+    color: white;
 }
 
 .xs-screen-thumbnail {
     font-size: 5vw;
-
 }
 
-.nav-footer {
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
+/* start overlay pool*/
+.pool_container {
+    position: relative;
 }
 
-.row {
-    margin-right: 0px;
-    margin-left: 0px;
+.img-thumbnail-pool {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
+.overlay_pool {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
 
-/* fin style section carte et jeux*/
+.pool_container:hover .img-thumbnail-pool {
+    opacity: 0.3;
+}
+
+.pool_container:hover .overlay_pool {
+    opacity: 1;
+}
+
+/* end overlay pool*/
+
+/* start overlay darts*/
+.darts_container {
+    position: relative;
+}
+
+.img-thumbnail-darts {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.overlay_darts {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.darts_container:hover .img-thumbnail-darts {
+    opacity: 0.3;
+}
+
+.darts_container:hover .overlay_darts {
+    opacity: 1;
+}
+
+/*end overlay darts*/
+
+/* start overlay flipper*/
+.flipper_container {
+    position: relative;
+}
+
+.img-thumbnail-flipper {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.overlay_flipper {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.flipper_container:hover .img-thumbnail-flipper {
+    opacity: 0.3;
+}
+
+.flipper_container:hover .overlay_flipper {
+    opacity: 1;
+}
+
+/* end overlay flipper*/
