@@ -4,6 +4,11 @@ body {
     background-color: black;
 }
 
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
 /*Background color*/
 
 .background-blanc {
