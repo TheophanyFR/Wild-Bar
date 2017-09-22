@@ -698,7 +698,7 @@ h4, h5 {
 .background_carte {
     background-image: url("../img/Free-Chalkboard-Backgrounds.jpg");
     border: 6px double whitesmoke;
-    padding-bottom: 8%;
+    padding: 8% 0;
 
 }
 

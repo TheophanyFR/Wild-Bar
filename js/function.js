@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
 // début partie navbar
-
     var affixElement = '#navbar-main';
 
     $(affixElement).affix({
@@ -24,7 +23,6 @@ $(document).ready(function () {
         console.log(dest);
         $('html,body').animate({scrollTop: $(dest).offset().top}, 'slow');
     });
-
 // fin partie navbar
 
 // début partie menu burger
@@ -37,7 +35,6 @@ $(document).ready(function () {
 // fin partie menu burger
 
 // début bouton go back to top
-
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
             $('#goToTopBtn').fadeIn('slow');
@@ -50,6 +47,5 @@ $(document).ready(function () {
             scrollTop: 0
         }, 'slow');
     });
-
 // fin bouton go back to top
 });
