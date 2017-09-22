@@ -462,11 +462,8 @@ a.effect-underline:hover:after {
 .sous_titre2 {
     font-family: 'Lobster Two', cursive;
     font-size: 2vw;
-    text-align: center;
     margin: 0;
     color: black;
-    text-decoration: underline;
-
 }
 
 .icons, .phone, .legal_mentions {
