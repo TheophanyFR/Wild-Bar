@@ -21,15 +21,23 @@ body {
 
 #section1 {
     padding-bottom: 10vh;
+    padding-top: 15vh;
+}
+
+#section2 {
+    padding-bottom: 10vh;
+    padding-top: 15vh;
 }
 
 
 #section3 {
     padding-bottom: 10vh;
+    padding-top: 15vh;
 }
 
 #section4 {
     padding-bottom: 10vh;
+    padding-top: 15vh;
 }
 
 /*Background color*/
@@ -70,7 +78,6 @@ section {
 .bandeau_titre-sm {
     background-image: url("../img/bar3.jpg");
     background-size: cover;
-    opacity: 0.8;
     width: 100%;
     height: 100%;
     padding-top: 5em;
@@ -90,6 +97,7 @@ section {
 
 .panneau-titre {
     border: 10px double whitesmoke;
+    border-radius: 5px;
     height: 100%;
     margin: 5vw 0 5vw 0;
     background-size: cover;
@@ -102,18 +110,6 @@ section {
     text-decoration: none;
     color: whitesmoke;
     outline: none;
-}
-
-/*Panneau + Titre taille xs et sm*/
-
-.panneau-titre-sm {
-
-    border: 5px double white;
-    height: 85vh;
-    width: 80vw;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: rgba(0, 0, 0, 0.4);
 }
 
 /*Debut Button Header*/
@@ -138,7 +134,6 @@ section {
     font-size: calc(100% + 2vh);
     font-family: 'Lobster Two', cursive;
     text-decoration: none;
-    border-radius: 5px;
 }
 
 /*Animation fleche*/
@@ -199,10 +194,12 @@ h1 {
     width: 100%;
     height: 100%;
     padding-top: 5em;
+    padding-bottom: 1em;
 }
 
 .panneau-titre-sm {
     border: 5px double whitesmoke;
+    border-radius: 5px;
     height: 85vh;
     width: 80vw;
     margin-right: auto;
@@ -226,7 +223,7 @@ h1 {
 }
 
 .panneau-titre-sm .info-panneau-sm {
-    font-size: 5vh;
+    font-size: 4vh;
     color: white;
     text-align: center;
     font-family: 'Raleway', Sans-Serif;
@@ -315,6 +312,7 @@ a .nav#navbar-main {
     margin-left: auto;
     margin-right: auto;
     border: 10px double whitesmoke;
+    border-radius: 5px;
     height: 100%;
     width:40vw;
 }
@@ -350,6 +348,7 @@ a .nav#navbar-main {
     margin-left: auto;
     margin-right: auto;
     border: 10px double whitesmoke;
+    border-radius: 5px;
     height: 100%;
     width:100%;
     padding-left:5vh;
@@ -656,7 +655,7 @@ h2 {
     width: 50vh;
     color: whitesmoke;
     font-family: 'Lobster Two', cursive;
-    margin-top: 15vh;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1.5em;
