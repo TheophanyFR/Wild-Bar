@@ -250,6 +250,10 @@ h1 {
     font-family: 'Lobster Two', cursive;
 }
 
+.navbar-header {
+    padding-right: 15px;
+}
+
 /*Text section navbar*/
 
 .navbar-inverse .navbar-nav > li > a {
@@ -269,6 +273,7 @@ h1 {
 
 .nav-sticky a {
     outline: none;
+    border-radius: 5px;
 }
 
 a .nav#navbar-main {
@@ -606,7 +611,7 @@ footer {
 
 .nav_smallscreen, .adress_small, .days_small {
 
-    padding: 5px 0 20px 0;
+    padding: 5px 15px 20px 15px;
     text-align: center;
 }
 
